@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal Mountain Bike</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#e6f4ed",
+                100: "#cceadb",
+                200: "#99d5b8",
+                300: "#66bf94",
+                400: "#33aa71",
+                500: "#00954d",
+                600: "#00773e",
+                700: "#00592e",
+                800: "#003c1f",
+                900: "#001e0f",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="circle relative bg-black text-white" id="circle">
+      <p
+        class="text-[0.2em] uppercase font-semibold text-center absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-300 leading-1"
+      >
+        Know <br />More
+      </p>
+    </div>
+    <nav class="bg-brand-900 fixed left-0 right-0 z-40">
+      <div class="container mx-auto p-4 grid grid-cols-3">
+        <div class="left flex flex-col gap-4">
+          <div class="upper-links flex gap-6">
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >FAQ</a
+            >
+            <!-- <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Events</a
+            > -->
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Blogs</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Repairs</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Contact</a
+            >
+          </div>
+          <div class="lower-links flex gap-6">
+            <div
+              class="hamburger group flex flex-col gap-[4px] justify-center items-start cursor-pointer"
+            >
+              <div
+                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+              ></div>
+              <div
+                class="line h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
+              ></div>
+              <div
+                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+              ></div>
+            </div>
+            <a
+              href="#"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Trecks</a
+            >
+            <a
+              href="#"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Cycling Destinations</a
+            >
+            <a
+              href="#"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold transition-colors"
+              >Expeditions</a
+            >
+          </div>
+        </div>
+        <a
+          href="./index.html"
+          class="mid group flex flex-col gap-2 items-center justify-center"
+        >
+          <svg
+            width="43"
+            height="32"
+            viewBox="0 0 43 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="mask0_176_563"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="43"
+              height="32"
+            >
+              <path
+                d="M0.6875 0H42.3121V32H0.6875V0Z"
+                class="fill-white group"
+              />
+            </mask>
+            <g mask="url(#mask0_176_563)">
+              <path
+                d="M10.9494 9.94764C15.5357 8.56882 16.1232 5.97054 20.3084 4.67085C21.7403 4.22642 26.3993 3.06224 30.527 5.69196C34.5193 8.23713 35.4299 12.6868 35.6065 13.6581C34.6125 13.6592 30.5357 13.7762 27.0659 16.9328C22.9446 20.6812 22.9295 25.7596 22.9403 26.5541H19.8282C19.8857 24.7666 20.2683 20.8036 22.9696 17.0379C23.8194 15.8542 25.5895 13.4489 28.8458 12.0419C29.9905 11.5465 31.0159 11.3059 31.753 11.179C31.4343 10.4896 30.7016 9.16609 29.2219 8.20895C27.3759 7.01332 25.4204 7.11847 24.1793 7.18025C23.6167 7.20844 22.5826 7.26697 21.349 7.71032C19.4803 8.3813 18.664 9.34061 17.3849 10.3162C13.9097 12.9708 9.90877 13.4153 8.33267 13.5909C6.58639 13.7849 5.13061 13.6971 4.16913 13.5909L4.4824 10.4745C6.03898 10.6544 8.36411 10.7248 10.9494 9.94764ZM4.21357 3.69636C4.07374 6.09086 6.00863 8.07995 8.25896 8.0561C10.3705 8.03334 12.1916 6.24478 12.2252 4.00096C12.184 1.78206 10.363 0.00434468 8.21994 8.78577e-06C6.18207 -0.00432711 4.40977 1.5967 4.21357 3.69636ZM15.733 24.4686C15.7362 28.5942 12.3412 31.9913 8.2156 31.9913C4.09 31.9913 0.696075 28.5942 0.698243 24.4686C0.719923 20.3603 4.10734 16.9913 8.2156 16.9913C12.3249 16.9913 15.7113 20.3603 15.733 24.4686ZM12.6924 24.8642C12.907 22.2735 10.7792 19.9787 8.2156 19.9744C5.90999 19.9701 3.89705 21.8204 3.73229 24.1737C3.56427 26.5812 5.38209 28.7774 7.83079 28.9855C10.3174 29.1979 12.4919 27.2793 12.6924 24.8642ZM42.2957 24.4686C42.2979 28.5942 38.904 31.9913 34.7784 31.9913C30.6528 31.9913 27.2578 28.5942 27.261 24.4686C27.2827 20.3603 30.669 16.9913 34.7784 16.9913C38.8877 16.9913 42.2741 20.3603 42.2957 24.4686ZM39.2704 24.4913C39.2747 22.0589 37.2477 19.9766 34.7784 19.9744C32.4533 19.9733 30.4826 21.8182 30.2983 24.1293C30.1043 26.5617 31.9503 28.7546 34.347 28.9822C36.9366 29.2272 39.266 27.0939 39.2704 24.4913Z"
+                class="fill-white group-hover:fill-brand-200 transition-colors"
+              />
+              <path
+                d="M10.9494 9.94764C15.5357 8.56882 16.1232 5.97054 20.3084 4.67085C21.7403 4.22642 26.3993 3.06224 30.527 5.69196C34.5193 8.23713 35.4299 12.6868 35.6065 13.6581C34.6125 13.6592 30.5357 13.7762 27.0659 16.9328C22.9446 20.6812 22.9295 25.7596 22.9403 26.5541H19.8282C19.8857 24.7666 20.2683 20.8036 22.9696 17.0379C23.8194 15.8542 25.5895 13.4489 28.8458 12.0419C29.9905 11.5465 31.0159 11.3059 31.753 11.179C31.4343 10.4896 30.7016 9.16609 29.2219 8.20895C27.3759 7.01332 25.4204 7.11847 24.1793 7.18025C23.6167 7.20844 22.5826 7.26697 21.349 7.71032C19.4803 8.3813 18.664 9.34061 17.3849 10.3162C13.9097 12.9708 9.90877 13.4153 8.33267 13.5909C6.58639 13.7849 5.13061 13.6971 4.16913 13.5909L4.4824 10.4745C6.03898 10.6544 8.36411 10.7248 10.9494 9.94764ZM4.21357 3.69636C4.07374 6.09086 6.00863 8.07995 8.25896 8.0561C10.3705 8.03334 12.1916 6.24478 12.2252 4.00096C12.184 1.78206 10.363 0.00434468 8.21994 8.78577e-06C6.18207 -0.00432711 4.40977 1.5967 4.21357 3.69636ZM15.733 24.4686C15.7362 28.5942 12.3412 31.9913 8.2156 31.9913C4.09 31.9913 0.696075 28.5942 0.698243 24.4686C0.719923 20.3603 4.10734 16.9913 8.2156 16.9913C12.3249 16.9913 15.7113 20.3603 15.733 24.4686ZM12.6924 24.8642C12.907 22.2735 10.7792 19.9787 8.2156 19.9744C5.90999 19.9701 3.89705 21.8204 3.73229 24.1737C3.56427 26.5812 5.38209 28.7774 7.83079 28.9855C10.3174 29.1979 12.4919 27.2793 12.6924 24.8642ZM42.2957 24.4686C42.2979 28.5942 38.904 31.9913 34.7784 31.9913C30.6528 31.9913 27.2578 28.5942 27.261 24.4686C27.2827 20.3603 30.669 16.9913 34.7784 16.9913C38.8877 16.9913 42.2741 20.3603 42.2957 24.4686ZM39.2704 24.4913C39.2747 22.0589 37.2477 19.9766 34.7784 19.9744C32.4533 19.9733 30.4826 21.8182 30.2983 24.1293C30.1043 26.5617 31.9503 28.7546 34.347 28.9822C36.9366 29.2272 39.266 27.0939 39.2704 24.4913Z"
+                class="fill-white group-hover:fill-brand-200 transition-colors"
+              />
+            </g>
+          </svg>
+
+          <h3
+            class="uppercase text-white font-semibold group-hover:text-brand-200 transition-colors"
+          >
+            Nepal Mountain Bike
+          </h3>
+        </a>
+        <div class="right flex flex-col items-end gap-4">
+          <div class="upper-links flex gap-6">
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold flex items-center justify-center gap-1 hover:font-semibold transition-colors"
+            >
+              <i class="fa-solid fa-globe text-sm"></i>
+              Pokhara</a
+            >
+          </div>
+          <div class="lower-links flex gap-6">
+            <a
+              href="#"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold flex items-center justify-center gap-2 hover:font-semibold transition-colors"
+              ><i class="fa-regular fa-user text-sm"></i>Login</a
+            >
+            <a
+              href="#"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 hover:font-semibold flex items-center justify-center gap-2 hover:font-semibold transition-colors"
+              ><i class="fa-solid fa-bag-shopping text-sm"></i>Cart</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero-section">
+      <div
+        class="container mx-auto py-32 px-4 grid grid-cols-1 lg:grid-cols-2 items-center gap-8"
+      >
+        <div class="text-content flex flex-col gap-6 w-11/12">
+          <h1 class="text-5xl font-bold uppercase text-brand-400 leading-tight">
+            Find the perfect <br />
+            <span class="text-stone-800"> biking tour destinations </span><br />
+            in Nepal.
+          </h1>
+          <p class="text-stone-800">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc eget
+            nunc vitae tellus luctus ullamcorper. Nam porttitor, sapien a
+            ultrices venenatis, sapien magna eleifend justo, ut suscipit erat
+            metus in neque. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit.
+          </p>
+          <div class="ctas flex gap-4 mt-6">
+            <a
+              href="#"
+              class="uppercase font-semibold bg-brand-900 text-white px-6 py-3 hover:bg-brand-600 transition-colors"
+              >Explore Destinations</a
+            >
+            <a
+              href="#"
+              class="uppercase flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+              ><i class="fa-solid fa-play"></i>Know More
+            </a>
+          </div>
+        </div>
+        <div class="image-content">
+          <div class="hero-img relative">
+            <div class="absolute -translate-x-1/2 -translate-y-1/2 top-1/2">
+              <img
+                class="animate-[spin_5s_linear_infinite] w-24 h-24"
+                src="./assets/hero-badge.svg"
+                alt=""
+              />
+            </div>
+            <img src="./assets/hero-img.png" class="h-full rounded-lg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cycling-destinations">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-16">
+        <div
+          class="section-header flex flex-col items-center justify-center gap-8"
+        >
+          <h3 class="font-bold text-2xl text-brand-400">
+            <span class="text-stone-800">Cycling </span> Destinations
+          </h3>
+          <div
+            class="filters flex justify-start md:justify-center w-full overflow-x-auto gap-4"
+          >
+            <a
+              href="#"
+              class="font-semibold bg-brand-900 text-white px-6 py-3 hover:bg-brand-600 transition-colors"
+              >All</a
+            >
+            <a
+              href="#"
+              class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+              >Downhill
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+              >Offroad
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+              >Onraod
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+              >City
+            </a>
+            <a
+              href="#"
+              class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+              >Others
+            </a>
+          </div>
+        </div>
+        <div class="vertical-list flex flex-col gap-8">
+          <div
+            class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
+            id="card"
+          >
+            <div class="info-head order-2 lg:order-1 flex flex-col gap-5">
+              <h3 class="text-2xl font-bold">
+                Sarangkot Downhill Cycling Adventure
+              </h3>
+              <div class="line hidden md:block h-px w-full bg-stone-300"></div>
+              <div class="info-col hidden md:block flex flex-col gap-2">
+                <p class="font-bold">Starting Point</p>
+                <p>Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col hidden md:block flex flex-col gap-2">
+                <p class="font-bold">Ending Point</p>
+                <p>Lakeside, Halanchowk</p>
+              </div>
+            </div>
+            <div
+              class="info-img order-1 lg:order-2 flex justify-center items-center h-64 overflow-hidden"
+            >
+              <img
+                src="https://i.pinimg.com/564x/5c/2a/56/5c2a564cfdcb3d991a1b4b61f907887e.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="info-overview order-3 flex flex-col gap-4 lg:border-r border-stone-300"
+            >
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Starting Price</p>
+                <h3 class="text-2xl font-bold">NRs. 12000</h3>
+              </div>
+              <div class="line lg:block h-px w-full bg-stone-300"></div>
+              <div class="info-col hidden md:block flex flex-col gap-2 pr-3">
+                <p class="font-bold">Overview</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur libero, praesentium commodi adipisci aliquid,
+                  odio nesciunt voluptatibus repellat, doloribus.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="info-secondary order-4 flex flex-wrap md:flex-col gap-5"
+            >
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Duration</p>
+                <p>11 Days 8 hours</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Trip Style</p>
+                <p>Hiking, Trekking</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Accomodation Type</p>
+                <p>Self, Hotel, Camping</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
+          >
+            <div class="info-head order-2 lg:order-1 flex flex-col gap-5">
+              <h3 class="text-2xl font-bold">
+                Sarangkot Downhill Cycling Adventure
+              </h3>
+              <div class="line hidden md:block h-px w-full bg-stone-300"></div>
+              <div class="info-col hidden md:block flex flex-col gap-2">
+                <p class="font-bold">Starting Point</p>
+                <p>Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col hidden md:block flex flex-col gap-2">
+                <p class="font-bold">Ending Point</p>
+                <p>Lakeside, Halanchowk</p>
+              </div>
+            </div>
+            <div
+              class="info-img order-1 lg:order-2 flex justify-center items-center h-64 overflow-hidden"
+            >
+              <img
+                src="https://i.pinimg.com/736x/37/9a/92/379a922b48f3ca47c0ee6f4f0d2ed161.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="info-overview order-3 flex flex-col gap-4 lg:border-r border-stone-300"
+            >
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Starting Price</p>
+                <h3 class="text-2xl font-bold">NRs. 12000</h3>
+              </div>
+              <div class="line lg:block h-px w-full bg-stone-300"></div>
+              <div class="info-col hidden md:block flex flex-col gap-2 pr-3">
+                <p class="font-bold">Overview</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur libero, praesentium commodi adipisci aliquid,
+                  odio nesciunt voluptatibus repellat, doloribus.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="info-secondary order-4 flex flex-wrap md:flex-col gap-5"
+            >
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Duration</p>
+                <p>11 Days 8 hours</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Trip Style</p>
+                <p>Hiking, Trekking</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Accomodation Type</p>
+                <p>Self, Hotel, Camping</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
+          >
+            <div class="info-head order-2 lg:order-1 flex flex-col gap-5">
+              <h3 class="text-2xl font-bold">
+                Sarangkot Downhill Cycling Adventure
+              </h3>
+              <div class="line hidden md:block h-px w-full bg-stone-300"></div>
+              <div class="info-col hidden md:block flex flex-col gap-2">
+                <p class="font-bold">Starting Point</p>
+                <p>Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col hidden md:block flex flex-col gap-2">
+                <p class="font-bold">Ending Point</p>
+                <p>Lakeside, Halanchowk</p>
+              </div>
+            </div>
+            <div
+              class="info-img order-1 lg:order-2 flex justify-center items-center h-64 overflow-hidden"
+            >
+              <img
+                src="https://i.pinimg.com/564x/50/8f/35/508f35aac13a73934599b6462118805d.jpg"
+                alt=""
+              />
+            </div>
+            <div
+              class="info-overview order-3 flex flex-col gap-4 lg:border-r border-stone-300"
+            >
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Starting Price</p>
+                <h3 class="text-2xl font-bold">NRs. 12000</h3>
+              </div>
+              <div class="line lg:block h-px w-full bg-stone-300"></div>
+              <div class="info-col hidden md:block flex flex-col gap-2 pr-3">
+                <p class="font-bold">Overview</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Consequuntur libero, praesentium commodi adipisci aliquid,
+                  odio nesciunt voluptatibus repellat, doloribus.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="info-secondary order-4 flex flex-wrap md:flex-col gap-5"
+            >
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Duration</p>
+                <p>11 Days 8 hours</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Trip Style</p>
+                <p>Hiking, Trekking</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Accomodation Type</p>
+                <p>Self, Hotel, Camping</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trending-bikes">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-between items-center">
+          <h3 class="font-bold text-2xl text-brand-400">
+            <span class="text-stone-800">Trending </span> Bike Rentals
+          </h3>
+          <a
+            href="#"
+            class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+            >View All
+          </a>
+        </div>
+
+        <div
+          class="item-row grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8"
+        >
+          <div class="item-card flex flex-col">
+            <div class="card-header bg-red-100 p-8 flex flex-col gap-2">
+              <p class="font-bold">Yellow Cannon Dale</p>
+              <h3 class="text-3xl font-bold">NRs. 12000</h3>
+              <p class="w-10/12">
+                2019 Mountain Bike of the year awarded by XPSports
+              </p>
+            </div>
+            <div
+              class="card-body bg-blue-100 flex justify-center items-center px-8"
+            >
+              <img
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/EmondaSLR9DiscEtap_21_33140_A_Primary"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item-card flex flex-col">
+            <div class="card-header bg-yellow-100 p-8 flex flex-col gap-2">
+              <p class="font-bold">Yellow Cannon Dale</p>
+              <h3 class="text-3xl font-bold">NRs. 12000</h3>
+              <p class="w-10/12">
+                2019 Mountain Bike of the year awarded by XPSports
+              </p>
+            </div>
+            <div
+              class="card-body bg-green-100 flex justify-center items-center px-8"
+            >
+              <img
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/EmondaSLR9DiscEtap_21_33140_A_Primary"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item-card flex flex-col">
+            <div class="card-header bg-orange-100 p-8 flex flex-col gap-2">
+              <p class="font-bold">Yellow Cannon Dale</p>
+              <h3 class="text-3xl font-bold">NRs. 12000</h3>
+              <p class="w-10/12">
+                2019 Mountain Bike of the year awarded by XPSports
+              </p>
+            </div>
+            <div
+              class="card-body bg-pink-100 flex justify-center items-center px-8"
+            >
+              <img
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/EmondaSLR9DiscEtap_21_33140_A_Primary"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="item-card flex flex-col">
+            <div class="card-header bg-violet-100 p-8 flex flex-col gap-2">
+              <p class="font-bold">Yellow Cannon Dale</p>
+              <h3 class="text-3xl font-bold">NRs. 12000</h3>
+              <p class="w-10/12">
+                2019 Mountain Bike of the year awarded by XPSports
+              </p>
+            </div>
+            <div
+              class="card-body bg-yellow-100 flex justify-center items-center px-8"
+            >
+              <img
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/EmondaSLR9DiscEtap_21_33140_A_Primary"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trekking-section">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-between items-center">
+          <h3 class="font-bold text-2xl text-stone-500">
+            <span class="text-stone-800">Treking </span> Destinations
+          </h3>
+          <a
+            href="#"
+            class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+            >View All
+          </a>
+        </div>
+
+        <div class="item-col flex flex-col gap-8">
+          <div
+            class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-7 items-center gap-6 md:gap-8 lg:flex-row"
+          >
+            <div
+              class="info-img col-span-7 lg:col-span-3 grid grid-cols-4 grid-rows-2 gap-2 h-56 md:h-80 overflow-hidden"
+            >
+              <div class="img-cover col-span-2 row-span-2 h-full">
+                <img
+                  src="https://i.pinimg.com/564x/34/9d/45/349d45d4bb3e76c72a4475b9163de5cc.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover h-full">
+                <img
+                  src="https://i.pinimg.com/564x/cd/35/54/cd3554b2996ea991fe07996957353785.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover h-full">
+                <img
+                  src="https://i.pinimg.com/564x/58/fd/ed/58fded0386b0ad3ee590f479f6b35b27.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover col-span-2 row-span-1 h-full">
+                <img
+                  src="https://i.pinimg.com/564x/74/59/72/745972dd72ab4dc194afd2e47943578b.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+            </div>
+
+            <div
+              class="info-header h-full col-span-7 lg:col-span-3 flex flex-col justify-center gap-5 lg:border-r border-stone-300"
+            >
+              <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
+
+              <p class="lg:w-11/12">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, nulla! Minima, officiis nam totam impedit, fugit
+                ratione illum ullam quibusdam non similique, neque velit autem
+                adipisci reiciendis quos placeat eos.
+              </p>
+
+              <div class="line lg:block h-px w-full bg-stone-300"></div>
+              <div class="info-head flex flex-wrap gap-6 lg:gap-8">
+                <div class="info-col flex flex-col gap-[0.8rem]">
+                  <p class="font-bold whitespace-nowrap">Starting Price</p>
+                  <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                </div>
+                <!-- <br class="lg:hidden" /> -->
+                <div class="info-col flex flex-col gap-2">
+                  <p class="font-bold whitespace-nowrap">Duration</p>
+                  <p class="whitespace-nowrap">12 Days</p>
+                </div>
+                <div class="info-col flex flex-col gap-2">
+                  <p class="font-bold whitespace-nowrap">Level</p>
+                  <p class="whitespace-nowrap">Intermediate</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="info-end w-full flex flex-wrap md:flex-nowrap lg:flex-col gap-6 md:gap-5"
+            >
+              <div class="info-col hidden md:flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Starting Point 1</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Ending Point</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Ending Point</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-7 items-center gap-6 md:gap-8 lg:flex-row"
+          >
+            <div
+              class="info-img col-span-7 lg:col-span-3 grid grid-cols-4 grid-rows-2 gap-2 h-56 md:h-80 overflow-hidden"
+            >
+              <div class="img-cover col-span-2 row-span-2 h-full">
+                <img
+                  src="https://i.pinimg.com/564x/34/9d/45/349d45d4bb3e76c72a4475b9163de5cc.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover h-full">
+                <img
+                  src="https://i.pinimg.com/564x/cd/35/54/cd3554b2996ea991fe07996957353785.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover h-full">
+                <img
+                  src="https://i.pinimg.com/564x/58/fd/ed/58fded0386b0ad3ee590f479f6b35b27.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover col-span-2 row-span-1 h-full">
+                <img
+                  src="https://i.pinimg.com/564x/74/59/72/745972dd72ab4dc194afd2e47943578b.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+            </div>
+
+            <div
+              class="info-header h-full col-span-7 lg:col-span-3 flex flex-col justify-center gap-5 lg:border-r border-stone-300"
+            >
+              <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
+
+              <p class="lg:w-11/12">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, nulla! Minima, officiis nam totam impedit, fugit
+                ratione illum ullam quibusdam non similique, neque velit autem
+                adipisci reiciendis quos placeat eos.
+              </p>
+
+              <div class="line lg:block h-px w-full bg-stone-300"></div>
+              <div class="info-head flex flex-wrap gap-6 lg:gap-8">
+                <div class="info-col flex flex-col gap-[0.8rem]">
+                  <p class="font-bold whitespace-nowrap">Starting Price</p>
+                  <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                </div>
+                <!-- <br class="lg:hidden" /> -->
+                <div class="info-col flex flex-col gap-2">
+                  <p class="font-bold whitespace-nowrap">Duration</p>
+                  <p class="whitespace-nowrap">12 Days</p>
+                </div>
+                <div class="info-col flex flex-col gap-2">
+                  <p class="font-bold whitespace-nowrap">Level</p>
+                  <p class="whitespace-nowrap">Intermediate</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="info-end w-full flex flex-wrap md:flex-nowrap lg:flex-col gap-6 md:gap-5"
+            >
+              <div class="info-col hidden md:flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Starting Point 1</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Ending Point</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Ending Point</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-7 items-center gap-6 md:gap-8 lg:flex-row"
+          >
+            <div
+              class="info-img col-span-7 lg:col-span-3 grid grid-cols-4 grid-rows-2 gap-2 h-56 md:h-80 overflow-hidden"
+            >
+              <div class="img-cover col-span-2 row-span-2 h-full">
+                <img
+                  src="https://i.pinimg.com/564x/34/9d/45/349d45d4bb3e76c72a4475b9163de5cc.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover h-full">
+                <img
+                  src="https://i.pinimg.com/564x/cd/35/54/cd3554b2996ea991fe07996957353785.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover h-full">
+                <img
+                  src="https://i.pinimg.com/564x/58/fd/ed/58fded0386b0ad3ee590f479f6b35b27.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+
+              <div class="img-cover col-span-2 row-span-1 h-full">
+                <img
+                  src="https://i.pinimg.com/564x/74/59/72/745972dd72ab4dc194afd2e47943578b.jpg"
+                  alt=""
+                  class="object-cover h-full w-full"
+                />
+              </div>
+            </div>
+
+            <div
+              class="info-header h-full col-span-7 lg:col-span-3 flex flex-col justify-center gap-5 lg:border-r border-stone-300"
+            >
+              <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
+
+              <p class="lg:w-11/12">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Tenetur, nulla! Minima, officiis nam totam impedit, fugit
+                ratione illum ullam quibusdam non similique, neque velit autem
+                adipisci reiciendis quos placeat eos.
+              </p>
+
+              <div class="line lg:block h-px w-full bg-stone-300"></div>
+              <div class="info-head flex flex-wrap gap-6 lg:gap-8">
+                <div class="info-col flex flex-col gap-[0.8rem]">
+                  <p class="font-bold whitespace-nowrap">Starting Price</p>
+                  <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                </div>
+                <!-- <br class="lg:hidden" /> -->
+                <div class="info-col flex flex-col gap-2">
+                  <p class="font-bold whitespace-nowrap">Duration</p>
+                  <p class="whitespace-nowrap">12 Days</p>
+                </div>
+                <div class="info-col flex flex-col gap-2">
+                  <p class="font-bold whitespace-nowrap">Level</p>
+                  <p class="whitespace-nowrap">Intermediate</p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="info-end w-full flex flex-wrap md:flex-nowrap lg:flex-col gap-6 md:gap-5"
+            >
+              <div class="info-col hidden md:flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Starting Point 1</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Ending Point</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold whitespace-nowrap">Ending Point</p>
+                <p class="whitespace-nowrap">Lakeside, Halanchowk</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="expedition-section">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-between items-center">
+          <h3 class="font-bold text-2xl text-stone-500">
+            <span class="text-stone-800">Discover </span> Expeditions
+          </h3>
+          <a
+            href="#"
+            class="flex items-center gap-2 font-semibold border border-brand-900 text-brand-900 px-6 py-3 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+            >View All
+          </a>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="exp-card flex flex-col justify-end h-96 bg-[url('https://i.pinimg.com/564x/5c/2a/56/5c2a564cfdcb3d991a1b4b61f907887e.jpg')] bg-center"
+          >
+            <div
+              class="exp-info p-6 bg-gradient-to-r from-brand-900 to-transparent h-full flex flex-col gap-4 justify-end items-start"
+            >
+              <span class="px-4 py-3 border border-white/80 text-white/80"
+                >Cannoning</span
+              >
+              <h3 class="text-2xl font-bold text-white">
+                Annapurna Base Camp Trek
+              </h3>
+              <p class="text-white/80">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur libero, praesentium commodi adipisci aliquid, odio
+                nesciunt voluptatibus repellat, doloribus.
+              </p>
+              <a
+                href=""
+                class="bg-white mt-2 text-brand-900 font-semibold hover:bg-brand-100 w-full flex items-center justify-center p-4"
+                >Know More</a
+              >
+            </div>
+          </div>
+          <div
+            class="exp-card flex flex-col justify-end h-96 bg-[url('https://i.pinimg.com/564x/5c/2a/56/5c2a564cfdcb3d991a1b4b61f907887e.jpg')] bg-center"
+          >
+            <div
+              class="exp-info p-6 bg-gradient-to-r from-brand-900 to-transparent h-full flex flex-col gap-4 justify-end items-start"
+            >
+              <span class="px-4 py-3 border border-white/80 text-white/80"
+                >Cannoning</span
+              >
+              <h3 class="text-2xl font-bold text-white">
+                Annapurna Base Camp Trek
+              </h3>
+              <p class="text-white/80">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur libero, praesentium commodi adipisci aliquid, odio
+                nesciunt voluptatibus repellat, doloribus.
+              </p>
+              <a
+                href=""
+                class="bg-white mt-2 text-brand-900 font-semibold hover:bg-brand-100 w-full flex items-center justify-center p-4"
+                >Know More</a
+              >
+            </div>
+          </div>
+          <div
+            class="exp-card flex flex-col justify-end h-96 bg-[url('https://i.pinimg.com/564x/5c/2a/56/5c2a564cfdcb3d991a1b4b61f907887e.jpg')] bg-center"
+          >
+            <div
+              class="exp-info p-6 bg-gradient-to-r from-brand-900 to-bg-brand-900 h-full flex flex-col gap-4 justify-end items-start"
+            >
+              <span class="px-4 py-3 border border-white/80 text-white/80"
+                >Rafting</span
+              >
+              <h3 class="text-2xl font-bold text-white">
+                Annapurna Base Camp Trek
+              </h3>
+              <p class="text-white/80">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequuntur libero, praesentium commodi adipisci aliquid, odio
+                nesciunt voluptatibus repellat, doloribus.
+              </p>
+              <a
+                href=""
+                class="bg-white mt-2 text-brand-900 font-semibold hover:bg-brand-100 w-full flex items-center justify-center p-4"
+                >Know More</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="awards-section">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-center items-center">
+          <h3 class="font-bold text-2xl text-stone-500">
+            <span class="text-stone-800">We Are </span> Awarded As
+          </h3>
+        </div>
+
+        <div class="awards flex items-center justify-center w-full h-full">
+          <div class="w-full relative flex items-center justify-center">
+            <button
+              aria-label="slide backward"
+              class="absolute z-10 h-12 w-12 left-[-20px] cursor-pointer flex justify-center items-center bg-white hover:bg-brand-600 text-brand-900 hover:text-white shadow-lg hover:shadow-2xl transition-all"
+              id="prev"
+            >
+              <i class="fa-solid fa-angle-left text-3xl"></i>
+            </button>
+            <div class="h-full w-full overflow-hidden">
+              <div
+                id="slider"
+                class="h-full flex items-center justify-start transition ease-out duration-700 mx-[-12px]"
+              >
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://nepalmountainbike.com/site/uploads/award/2c55758bd5598c50ade3845bda020d5b8f92351e.png')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                      <h4 class="text-xl font-bold text-brand-900">
+                        Mr. Prithvi Singh
+                      </h4>
+                      <p class="text-stone-500">Principal, Co-Founder</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://nepalmountainbike.com/site/uploads/award/eadf028e101114c36d3fa1589dccd6f376d6bf43.jpg')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                      <h4 class="text-xl font-bold text-brand-900">
+                        Mr. Prithvi Singh
+                      </h4>
+                      <p class="text-stone-500">Principal, Co-Founder</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://nepalmountainbike.com/site/uploads/award/af56eda6200f5c5addd050c76e414209b485e8b9.png')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                      <h4 class="text-xl font-bold text-brand-900">
+                        Mr. Prithvi Singh
+                      </h4>
+                      <p class="text-stone-500">Principal, Co-Founder</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://i.pinimg.com/564x/85/65/02/856502a5f264883834fb0707fa68b4f6.jpg')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                      <h4 class="text-xl font-bold text-brand-900">
+                        Mr. Prithvi Singh
+                      </h4>
+                      <p class="text-stone-500">Principal, Co-Founder</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://i.pinimg.com/564x/85/65/02/856502a5f264883834fb0707fa68b4f6.jpg')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                      <h4 class="text-xl font-bold text-brand-900">
+                        Mr. Prithvi Singh
+                      </h4>
+                      <p class="text-stone-500">Principal, Co-Founder</p>
+                    </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://nepalmountainbike.com/site/uploads/award/2c55758bd5598c50ade3845bda020d5b8f92351e.png')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                    <h4 class="text-xl font-bold text-brand-900">
+                      Mr. Prithvi Singh
+                    </h4>
+                    <p class="text-stone-500">Principal, Co-Founder</p>
+                  </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://nepalmountainbike.com/site/uploads/award/eadf028e101114c36d3fa1589dccd6f376d6bf43.jpg')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                    <h4 class="text-xl font-bold text-brand-900">
+                      Mr. Prithvi Singh
+                    </h4>
+                    <p class="text-stone-500">Principal, Co-Founder</p>
+                  </div> -->
+                  </div>
+                </div>
+                <div
+                  class="award-card flex flex-col overflow-hidden flex-shrink-0 w-6/12 md:w-4/12 lg:w-3/12 xl:w-2/12 p-3"
+                >
+                  <div
+                    class="img col-span-6 lg:col-span-2 h-[20rem] md:h-[24rem] lg:h-[18rem] xl:h-[16rem] bg-stone-300 bg-[url('https://nepalmountainbike.com/site/uploads/award/af56eda6200f5c5addd050c76e414209b485e8b9.png')] bg-contain bg-no-repeat bg-center bg-white flex items-end"
+                  >
+                    <!-- <div class="persona w-full flex flex-col bg-white m-4 p-6">
+                    <h4 class="text-xl font-bold text-brand-900">
+                      Mr. Prithvi Singh
+                    </h4>
+                    <p class="text-stone-500">Principal, Co-Founder</p>
+                  </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              aria-label="slide forward"
+              class="absolute z-2 h-12 w-12 right-[-20px] cursor-pointer flex justify-center items-center bg-white hover:bg-brand-600 text-brand-900 hover:text-white shadow-lg hover:shadow-2xl transition-all"
+              id="next"
+            >
+              <i class="fa-solid fa-angle-right text-3xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-center items-center">
+          <h3 class="font-bold text-2xl text-stone-500">
+            <span class="text-stone-800">Contact </span> Us
+          </h3>
+        </div>
+
+        <div
+          class="contact-grid grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8"
+        >
+          <form class="flex flex-col gap-6">
+            <input
+              class="p-4 bg-stone-100 w-full placeholder:text-stone-500"
+              type="text"
+              name=""
+              id=""
+              placeholder="Full Name"
+            />
+            <input
+              class="p-4 bg-stone-100 w-full placeholder:text-stone-500"
+              type="email"
+              name=""
+              id=""
+              placeholder="Email Address"
+            />
+            <select
+              class="p-4 bg-stone-100 text-stone-500 disabled:text-stone-500 placeholder:text-stone-500"
+              name="subject"
+              id=""
+            >
+              <option class="" value="subject">Subject</option>
+              <option value="subject">General Inquiry</option>
+              <option value="subject">Booking Inquiry</option>
+              <option value="subject">Complaint</option>
+              <option value="subject">Feedback</option>
+            </select>
+            <textarea
+              class="p-4 bg-stone-100 w-full h-40 placeholder:text-stone-500"
+              name=""
+              id=""
+              placeholder="Message"
+            ></textarea>
+
+            <a
+              href="#"
+              class="font-semibold flex items-center justify-center bg-brand-900 text-white px-6 py-3 hover:bg-brand-600 transition-colors"
+              >Submit</a
+            >
+          </form>
+
+          <div class="contact-info flex flex-col border-r border-stone-300">
+            <div class="flex-col flex flex-col gap-5">
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Visit Us At</p>
+                <p>Pokhara, Lakeside</p>
+                <p>Street No. XX</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Give Us a Call</p>
+                <p>+977 9812345678</p>
+                <p>+977 9812345678</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Email</p>
+                <p>contact@gmail.com</p>
+                <p>support@nmb.com</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-3">
+                <p class="font-bold">Socail Links</p>
+                <div class="links flex gap-4">
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-square-facebook"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-instagram"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-youtube"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-xl fa-x-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map h-full">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/">gps tracker sport</a></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-brand-900 mt-16">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8"></div>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/slider.js"></script>
+  </body>
+</html>
