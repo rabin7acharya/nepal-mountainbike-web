@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nepal Mountain Bike</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: {
+                50: "#e6f4ed",
+                100: "#cceadb",
+                200: "#99d5b8",
+                300: "#66bf94",
+                400: "#33aa71",
+                500: "#00954d",
+                600: "#00773e",
+                700: "#00592e",
+                800: "#003c1f",
+                900: "#001e0f",
+              },
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <nav class="bg-brand-900 fixed top-0 left-0 right-0 z-40">
+      <div
+        class="container mx-auto px-4 pt-4 pb-3 grid grid-cols-3 items-center"
+      >
+        <div class="left flex flex-col gap-3">
+          <div class="upper-links hidden lg:flex gap-6">
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
+              >About Us</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
+              >FAQ</a
+            >
+            <!-- <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline  transition-colors"
+              >Events</a
+            > -->
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
+              >Shop</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
+              >Blogs</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
+              >Repairs</a
+            >
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
+              >Contact</a
+            >
+          </div>
+          <div class="lower-links flex items-center gap-2">
+            <div
+              class="hamburger border border-stone-600 p-2 h-full group hover:bg-brand-600 hover:border-brand-600 flex flex-col gap-[4px] justify-center items-start cursor-pointer"
+            >
+              <div
+                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+              ></div>
+              <div
+                class="line h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
+              ></div>
+              <div
+                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+              ></div>
+            </div>
+            <div class="lower-links hidden lg:flex gap-0">
+              <div class="group flex items-center justify-center">
+                <span
+                  class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
+                  >Trecks</span
+                >
+                <div
+                  class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.8rem] w-full left-0 right-0 absolute"
+                >
+                  <div
+                    class="w-full h-3 bg-brand-900 border-b-2 border-brand-500"
+                  ></div>
+                  <div class="container mx-auto p-4 grid grid-cols-4">
+                    <div class="mega-links flex flex-col">
+                      <a href="" class="text-stone-200 hover:text-brand-200"
+                        >HEllo</a
+                      >
+                      <a href="">HEllo</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group flex items-center justify-center">
+                <span
+                  class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
+                  >MTB Tours</span
+                >
+                <div
+                  class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.8rem] w-full left-0 right-0 absolute"
+                >
+                  <div
+                    class="w-full h-3 bg-brand-900 border-b-2 border-brand-500"
+                  ></div>
+                  <div class="container mx-auto p-4 grid grid-cols-4">
+                    <div class="mega-links flex flex-col">
+                      <a href="" class="text-stone-200 hover:text-brand-200"
+                        >MTB Tours</a
+                      >
+                      <a href="">Another Tour</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="group flex items-center justify-center">
+                <span
+                  class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
+                  >Expeditions</span
+                >
+                <div
+                  class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.8rem] w-full left-0 right-0 absolute"
+                >
+                  <div
+                    class="w-full h-3 bg-brand-900 border-b-2 border-brand-500"
+                  ></div>
+                  <div class="container mx-auto p-4 grid grid-cols-4">
+                    <div class="mega-links flex flex-col">
+                      <a href="" class="text-stone-200 hover:text-brand-200"
+                        >Expedition</a
+                      >
+                      <a href="">Another Expedition</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a
+          href="./index.html"
+          class="mid group flex flex-col gap-2 items-center justify-center"
+        >
+          <svg
+            width="43"
+            height="32"
+            viewBox="0 0 43 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="mask0_176_563"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="43"
+              height="32"
+            >
+              <path
+                d="M0.6875 0H42.3121V32H0.6875V0Z"
+                class="fill-white group"
+              />
+            </mask>
+            <g mask="url(#mask0_176_563)">
+              <path
+                d="M10.9494 9.94764C15.5357 8.56882 16.1232 5.97054 20.3084 4.67085C21.7403 4.22642 26.3993 3.06224 30.527 5.69196C34.5193 8.23713 35.4299 12.6868 35.6065 13.6581C34.6125 13.6592 30.5357 13.7762 27.0659 16.9328C22.9446 20.6812 22.9295 25.7596 22.9403 26.5541H19.8282C19.8857 24.7666 20.2683 20.8036 22.9696 17.0379C23.8194 15.8542 25.5895 13.4489 28.8458 12.0419C29.9905 11.5465 31.0159 11.3059 31.753 11.179C31.4343 10.4896 30.7016 9.16609 29.2219 8.20895C27.3759 7.01332 25.4204 7.11847 24.1793 7.18025C23.6167 7.20844 22.5826 7.26697 21.349 7.71032C19.4803 8.3813 18.664 9.34061 17.3849 10.3162C13.9097 12.9708 9.90877 13.4153 8.33267 13.5909C6.58639 13.7849 5.13061 13.6971 4.16913 13.5909L4.4824 10.4745C6.03898 10.6544 8.36411 10.7248 10.9494 9.94764ZM4.21357 3.69636C4.07374 6.09086 6.00863 8.07995 8.25896 8.0561C10.3705 8.03334 12.1916 6.24478 12.2252 4.00096C12.184 1.78206 10.363 0.00434468 8.21994 8.78577e-06C6.18207 -0.00432711 4.40977 1.5967 4.21357 3.69636ZM15.733 24.4686C15.7362 28.5942 12.3412 31.9913 8.2156 31.9913C4.09 31.9913 0.696075 28.5942 0.698243 24.4686C0.719923 20.3603 4.10734 16.9913 8.2156 16.9913C12.3249 16.9913 15.7113 20.3603 15.733 24.4686ZM12.6924 24.8642C12.907 22.2735 10.7792 19.9787 8.2156 19.9744C5.90999 19.9701 3.89705 21.8204 3.73229 24.1737C3.56427 26.5812 5.38209 28.7774 7.83079 28.9855C10.3174 29.1979 12.4919 27.2793 12.6924 24.8642ZM42.2957 24.4686C42.2979 28.5942 38.904 31.9913 34.7784 31.9913C30.6528 31.9913 27.2578 28.5942 27.261 24.4686C27.2827 20.3603 30.669 16.9913 34.7784 16.9913C38.8877 16.9913 42.2741 20.3603 42.2957 24.4686ZM39.2704 24.4913C39.2747 22.0589 37.2477 19.9766 34.7784 19.9744C32.4533 19.9733 30.4826 21.8182 30.2983 24.1293C30.1043 26.5617 31.9503 28.7546 34.347 28.9822C36.9366 29.2272 39.266 27.0939 39.2704 24.4913Z"
+                class="fill-white group-hover:fill-brand-200 transition-colors"
+              />
+              <path
+                d="M10.9494 9.94764C15.5357 8.56882 16.1232 5.97054 20.3084 4.67085C21.7403 4.22642 26.3993 3.06224 30.527 5.69196C34.5193 8.23713 35.4299 12.6868 35.6065 13.6581C34.6125 13.6592 30.5357 13.7762 27.0659 16.9328C22.9446 20.6812 22.9295 25.7596 22.9403 26.5541H19.8282C19.8857 24.7666 20.2683 20.8036 22.9696 17.0379C23.8194 15.8542 25.5895 13.4489 28.8458 12.0419C29.9905 11.5465 31.0159 11.3059 31.753 11.179C31.4343 10.4896 30.7016 9.16609 29.2219 8.20895C27.3759 7.01332 25.4204 7.11847 24.1793 7.18025C23.6167 7.20844 22.5826 7.26697 21.349 7.71032C19.4803 8.3813 18.664 9.34061 17.3849 10.3162C13.9097 12.9708 9.90877 13.4153 8.33267 13.5909C6.58639 13.7849 5.13061 13.6971 4.16913 13.5909L4.4824 10.4745C6.03898 10.6544 8.36411 10.7248 10.9494 9.94764ZM4.21357 3.69636C4.07374 6.09086 6.00863 8.07995 8.25896 8.0561C10.3705 8.03334 12.1916 6.24478 12.2252 4.00096C12.184 1.78206 10.363 0.00434468 8.21994 8.78577e-06C6.18207 -0.00432711 4.40977 1.5967 4.21357 3.69636ZM15.733 24.4686C15.7362 28.5942 12.3412 31.9913 8.2156 31.9913C4.09 31.9913 0.696075 28.5942 0.698243 24.4686C0.719923 20.3603 4.10734 16.9913 8.2156 16.9913C12.3249 16.9913 15.7113 20.3603 15.733 24.4686ZM12.6924 24.8642C12.907 22.2735 10.7792 19.9787 8.2156 19.9744C5.90999 19.9701 3.89705 21.8204 3.73229 24.1737C3.56427 26.5812 5.38209 28.7774 7.83079 28.9855C10.3174 29.1979 12.4919 27.2793 12.6924 24.8642ZM42.2957 24.4686C42.2979 28.5942 38.904 31.9913 34.7784 31.9913C30.6528 31.9913 27.2578 28.5942 27.261 24.4686C27.2827 20.3603 30.669 16.9913 34.7784 16.9913C38.8877 16.9913 42.2741 20.3603 42.2957 24.4686ZM39.2704 24.4913C39.2747 22.0589 37.2477 19.9766 34.7784 19.9744C32.4533 19.9733 30.4826 21.8182 30.2983 24.1293C30.1043 26.5617 31.9503 28.7546 34.347 28.9822C36.9366 29.2272 39.266 27.0939 39.2704 24.4913Z"
+                class="fill-white group-hover:fill-brand-200 transition-colors"
+              />
+            </g>
+          </svg>
+
+          <h3
+            class="uppercase hidden lg:block text-white font-semibold group-hover:text-brand-200 transition-colors"
+          >
+            Nepal Mountain Bike
+          </h3>
+        </a>
+        <div class="right flex flex-col items-end gap-3">
+          <div class="upper-links hidden lg:flex gap-6">
+            <a
+              href="#"
+              class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline flex items-center justify-center gap-1 transition-colors"
+            >
+              <i class="fa-solid fa-globe text-sm"></i>
+              Pokhara</a
+            >
+          </div>
+          <div class="lower-links flex gap-6">
+            <a
+              href="#"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
+              ><i class="fa-regular fa-user text-lg lg:text-sm"></i>
+              <span class="hidden md:block">Login</span>
+            </a>
+            <a
+              href="#"
+              class="uppercase hidden md:block whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
+              ><i class="fa-solid fa-bag-shopping text-sm"></i>
+              <span class="">Cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section
+      class="shop-header mt-10 md:mt-20 bg-gradient-to-b from-brand-900 to-brand-600 bg-[url('https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864')]"
+    >
+      <div
+        class="container mx-auto py-16 px-4 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-3xl font-semibold text-stone-200">Shop / Bikes</h1>
+        <div class="ctas flex gap-4 mt-6">
+          <a
+            href="#"
+            class="uppercase whitespace-nowrap font-semibold bg-stone-200 text-brand-900 px-6 py-3 hover:bg-white transition-colors"
+            >Explore
+          </a>
+          <a
+            href="#"
+            class="uppercase whitespace-nowrap flex items-center gap-2 font-semibold border border-stone-200 text-stone-200 px-6 py-3 hover:bg-white hover:border-white hover:text-brand-900 transition-colors"
+            ><i class="fa-solid fa-play"></i>Know More
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="shop-body">
+      <div class="container mx-auto py-16 px-4 grid grid-cols-5">
+        <div class="filter-panel col-span-1 flex flex-col gap-8">
+          <h4 class="font-semibold text-lg">Filters</h4>
+          <div class="filter-group flex flex-col text-stone-500 gap-3">
+            <h4 class="font-semibold text-brand-900 text-lg">Category</h4>
+            <button class="w-fit">Aluminium Made</button>
+            <button class="w-fit">Aluminium Made</button>
+            <button class="w-fit">Aluminium Made</button>
+          </div>
+          <div class="filter-group flex flex-col text-stone-500 gap-3">
+            <h4 class="font-semibold text-brand-900 text-lg">Price</h4>
+            <button class="w-fit">10,000 - 15,000</button>
+            <button class="w-fit">16,000 - 20,000</button>
+            <button class="w-fit">21,000 - 25,000</button>
+            <button class="w-fit">26,000 - 30,000</button>
+          </div>
+        </div>
+        <div class="items-panel flex flex-col gap-8 col-span-4">
+          <div class="row flex justify-between">
+            <h4 class="font-semibold text-lg">55 Items</h4>
+            <div class="sort flex gap-4">
+              <span class="flex items-center gap-1">
+                <span class="text-stone-500">Sort By:</span>
+                <select class="text-brand-900 font-semibold" name="" id="">
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                </select>
+              </span>
+            </div>
+          </div>
+          <div class="items-grid grid grid-cols-3">
+            <div
+              class="item-card p-8 border hover:border-brand-900 flex flex-col gap-6 items-center"
+            >
+              <div class="item-cover">
+                <img
+                  class="object-cover object-center w-full h-60"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center">
+                <h4 class="font-semibold text-lg uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+              </div>
+            </div>
+            <div
+              class="item-card p-8 border hover:border-brand-900 flex flex-col gap-4 items-center"
+            >
+              <div class="item-cover">
+                <img
+                  class="object-cover object-center w-full h-60"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/1920Wx1920H_YSBA9IE4.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center">
+                <h4 class="font-semibold text-lg uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+              </div>
+            </div>
+            <div
+              class="item-card p-8 border hover:border-brand-900 flex flex-col gap-4 items-center"
+            >
+              <div class="item-cover">
+                <img
+                  class="object-cover object-center w-full h-60"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/Powerfly4_22_32844_B_Primary.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center">
+                <h4 class="font-semibold text-lg uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+              </div>
+            </div>
+            <div
+              class="item-card p-8 border hover:border-brand-900 flex flex-col gap-4 items-center"
+            >
+              <div class="item-cover">
+                <img
+                  class="object-cover object-center w-full h-60"
+                  src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/ECaliber98GXUS_21_34672_A_Primary"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center">
+                <h4 class="font-semibold text-lg uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+              </div>
+            </div>
+            <div
+              class="item-card p-8 border hover:border-brand-900 flex flex-col gap-4 items-center"
+            >
+              <div class="item-cover">
+                <img
+                  class="object-cover object-center w-full h-60"
+                  src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/ECaliber98GXUS_21_34672_A_Primary"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center">
+                <h4 class="font-semibold text-lg uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+              </div>
+            </div>
+            <div
+              class="item-card p-8 border hover:border-brand-900 flex flex-col gap-4 items-center"
+            >
+              <div class="item-cover">
+                <img
+                  class="object-cover object-center w-full h-60"
+                  src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/ECaliber98GXUS_21_34672_A_Primary"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center">
+                <h4 class="font-semibold text-lg uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-center items-center">
+          <h3 class="font-bold text-2xl text-stone-500">
+            <span class="text-stone-800">Contact </span> Us
+          </h3>
+        </div>
+
+        <div
+          class="contact-grid grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8"
+        >
+          <form class="flex flex-col gap-6">
+            <input
+              class="p-4 bg-stone-100 w-full placeholder:text-stone-500"
+              type="text"
+              name=""
+              id=""
+              placeholder="Full Name"
+            />
+            <input
+              class="p-4 bg-stone-100 w-full placeholder:text-stone-500"
+              type="email"
+              name=""
+              id=""
+              placeholder="Email Address"
+            />
+            <select
+              class="p-4 bg-stone-100 text-stone-500 disabled:text-stone-500 placeholder:text-stone-500"
+              name="subject"
+              id=""
+            >
+              <option class="" value="subject">Subject</option>
+              <option value="subject">General Inquiry</option>
+              <option value="subject">Booking Inquiry</option>
+              <option value="subject">Complaint</option>
+              <option value="subject">Feedback</option>
+            </select>
+            <textarea
+              class="p-4 bg-stone-100 w-full h-40 placeholder:text-stone-500"
+              name=""
+              id=""
+              placeholder="Message"
+            ></textarea>
+
+            <a
+              href="#"
+              class="font-semibold flex items-center justify-center bg-brand-900 text-white px-6 py-3 hover:bg-brand-600 transition-colors"
+              >Submit</a
+            >
+          </form>
+
+          <div class="contact-info flex flex-col border-r border-stone-300">
+            <div class="flex-col flex flex-col gap-5">
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Visit Us At</p>
+                <p>Pokhara, Lakeside</p>
+                <p>Street No. XX</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Give Us a Call</p>
+                <p>+977 9812345678</p>
+                <p>+977 9812345678</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Email</p>
+                <p>contact@gmail.com</p>
+                <p>support@nmb.com</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-3">
+                <p class="font-bold">Socail Links</p>
+                <div class="links flex gap-4">
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-square-facebook"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-instagram"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-youtube"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-xl fa-x-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map h-full">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/">gps tracker sport</a></iframe
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-brand-900 mt-16">
+      <div
+        class="container mx-auto pt-12 pb-8 px-4 flex flex-col items-center gap-6"
+      >
+        <a
+          href="./index.html"
+          class="mid group flex flex-col gap-2 items-center justify-center"
+        >
+          <svg
+            width="43"
+            height="32"
+            viewBox="0 0 43 32"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <mask
+              id="mask0_176_563"
+              style="mask-type: luminance"
+              maskUnits="userSpaceOnUse"
+              x="0"
+              y="0"
+              width="43"
+              height="32"
+            >
+              <path
+                d="M0.6875 0H42.3121V32H0.6875V0Z"
+                class="fill-white group"
+              />
+            </mask>
+            <g mask="url(#mask0_176_563)">
+              <path
+                d="M10.9494 9.94764C15.5357 8.56882 16.1232 5.97054 20.3084 4.67085C21.7403 4.22642 26.3993 3.06224 30.527 5.69196C34.5193 8.23713 35.4299 12.6868 35.6065 13.6581C34.6125 13.6592 30.5357 13.7762 27.0659 16.9328C22.9446 20.6812 22.9295 25.7596 22.9403 26.5541H19.8282C19.8857 24.7666 20.2683 20.8036 22.9696 17.0379C23.8194 15.8542 25.5895 13.4489 28.8458 12.0419C29.9905 11.5465 31.0159 11.3059 31.753 11.179C31.4343 10.4896 30.7016 9.16609 29.2219 8.20895C27.3759 7.01332 25.4204 7.11847 24.1793 7.18025C23.6167 7.20844 22.5826 7.26697 21.349 7.71032C19.4803 8.3813 18.664 9.34061 17.3849 10.3162C13.9097 12.9708 9.90877 13.4153 8.33267 13.5909C6.58639 13.7849 5.13061 13.6971 4.16913 13.5909L4.4824 10.4745C6.03898 10.6544 8.36411 10.7248 10.9494 9.94764ZM4.21357 3.69636C4.07374 6.09086 6.00863 8.07995 8.25896 8.0561C10.3705 8.03334 12.1916 6.24478 12.2252 4.00096C12.184 1.78206 10.363 0.00434468 8.21994 8.78577e-06C6.18207 -0.00432711 4.40977 1.5967 4.21357 3.69636ZM15.733 24.4686C15.7362 28.5942 12.3412 31.9913 8.2156 31.9913C4.09 31.9913 0.696075 28.5942 0.698243 24.4686C0.719923 20.3603 4.10734 16.9913 8.2156 16.9913C12.3249 16.9913 15.7113 20.3603 15.733 24.4686ZM12.6924 24.8642C12.907 22.2735 10.7792 19.9787 8.2156 19.9744C5.90999 19.9701 3.89705 21.8204 3.73229 24.1737C3.56427 26.5812 5.38209 28.7774 7.83079 28.9855C10.3174 29.1979 12.4919 27.2793 12.6924 24.8642ZM42.2957 24.4686C42.2979 28.5942 38.904 31.9913 34.7784 31.9913C30.6528 31.9913 27.2578 28.5942 27.261 24.4686C27.2827 20.3603 30.669 16.9913 34.7784 16.9913C38.8877 16.9913 42.2741 20.3603 42.2957 24.4686ZM39.2704 24.4913C39.2747 22.0589 37.2477 19.9766 34.7784 19.9744C32.4533 19.9733 30.4826 21.8182 30.2983 24.1293C30.1043 26.5617 31.9503 28.7546 34.347 28.9822C36.9366 29.2272 39.266 27.0939 39.2704 24.4913Z"
+                class="fill-white group-hover:fill-brand-200 transition-colors"
+              />
+              <path
+                d="M10.9494 9.94764C15.5357 8.56882 16.1232 5.97054 20.3084 4.67085C21.7403 4.22642 26.3993 3.06224 30.527 5.69196C34.5193 8.23713 35.4299 12.6868 35.6065 13.6581C34.6125 13.6592 30.5357 13.7762 27.0659 16.9328C22.9446 20.6812 22.9295 25.7596 22.9403 26.5541H19.8282C19.8857 24.7666 20.2683 20.8036 22.9696 17.0379C23.8194 15.8542 25.5895 13.4489 28.8458 12.0419C29.9905 11.5465 31.0159 11.3059 31.753 11.179C31.4343 10.4896 30.7016 9.16609 29.2219 8.20895C27.3759 7.01332 25.4204 7.11847 24.1793 7.18025C23.6167 7.20844 22.5826 7.26697 21.349 7.71032C19.4803 8.3813 18.664 9.34061 17.3849 10.3162C13.9097 12.9708 9.90877 13.4153 8.33267 13.5909C6.58639 13.7849 5.13061 13.6971 4.16913 13.5909L4.4824 10.4745C6.03898 10.6544 8.36411 10.7248 10.9494 9.94764ZM4.21357 3.69636C4.07374 6.09086 6.00863 8.07995 8.25896 8.0561C10.3705 8.03334 12.1916 6.24478 12.2252 4.00096C12.184 1.78206 10.363 0.00434468 8.21994 8.78577e-06C6.18207 -0.00432711 4.40977 1.5967 4.21357 3.69636ZM15.733 24.4686C15.7362 28.5942 12.3412 31.9913 8.2156 31.9913C4.09 31.9913 0.696075 28.5942 0.698243 24.4686C0.719923 20.3603 4.10734 16.9913 8.2156 16.9913C12.3249 16.9913 15.7113 20.3603 15.733 24.4686ZM12.6924 24.8642C12.907 22.2735 10.7792 19.9787 8.2156 19.9744C5.90999 19.9701 3.89705 21.8204 3.73229 24.1737C3.56427 26.5812 5.38209 28.7774 7.83079 28.9855C10.3174 29.1979 12.4919 27.2793 12.6924 24.8642ZM42.2957 24.4686C42.2979 28.5942 38.904 31.9913 34.7784 31.9913C30.6528 31.9913 27.2578 28.5942 27.261 24.4686C27.2827 20.3603 30.669 16.9913 34.7784 16.9913C38.8877 16.9913 42.2741 20.3603 42.2957 24.4686ZM39.2704 24.4913C39.2747 22.0589 37.2477 19.9766 34.7784 19.9744C32.4533 19.9733 30.4826 21.8182 30.2983 24.1293C30.1043 26.5617 31.9503 28.7546 34.347 28.9822C36.9366 29.2272 39.266 27.0939 39.2704 24.4913Z"
+                class="fill-white group-hover:fill-brand-200 transition-colors"
+              />
+            </g>
+          </svg>
+
+          <h3
+            class="uppercase text-white font-semibold group-hover:text-brand-200 transition-colors"
+          >
+            Nepal Mountain Bike
+          </h3>
+        </a>
+        <!-- <p class="text-stone-200">
+          Subscribe to our newsletter and get all the exclusive news, offers and
+          events.
+        </p> -->
+        <form class="flex gap-1 bg-white p-1 w-full md:w-fit">
+          <input
+            type="email"
+            class="py-2 px-3 w-full md:w-80 placeholder:text-stone-500"
+            placeholder="Email Address"
+          />
+          <button
+            class="bg-brand-900 text-white py-2 px-4 hover:bg-brand-600 transition-colors"
+          >
+            Subscribe
+          </button>
+        </form>
+        <p class="text-sm text-stone-200 text-center md:w-5/12">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
+          facere odio perspiciatis sed. Consectetur deleniti vitae quasi magni
+          saepe libero.
+        </p>
+        <div class="info-col flex flex-col items-center gap-3">
+          <p class="text-stone-200">Follow us on</p>
+          <div class="links flex gap-4">
+            <a
+              href=""
+              class="icon flex items-center justify-center bg-stone-200 hover:bg-brand-600 hover:text-white transition-colors h-10 w-10 text-brand-900"
+            >
+              <i class="fa-brands text-2xl fa-square-facebook"></i>
+            </a>
+            <a
+              href=""
+              class="icon flex items-center justify-center bg-stone-200 hover:bg-brand-600 hover:text-white transition-colors h-10 w-10 text-brand-900"
+            >
+              <i class="fa-brands text-2xl fa-instagram"></i>
+            </a>
+
+            <a
+              href=""
+              class="icon flex items-center justify-center bg-stone-200 hover:bg-brand-600 hover:text-white transition-colors h-10 w-10 text-brand-900"
+            >
+              <i class="fa-brands text-2xl fa-youtube"></i>
+            </a>
+            <a
+              href=""
+              class="icon flex items-center justify-center bg-stone-200 hover:bg-brand-600 hover:text-white transition-colors h-10 w-10 text-brand-900"
+            >
+              <i class="fa-brands text-xl fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="footer-links grid grid-cols-2 lg:grid-cols-4 mt-12 gap-16 w-full"
+        >
+          <div class="footer-col flex flex-col gap-4">
+            <h4 class="text-white font-semibold">Menu</h4>
+            <div class="links-col flex flex-col gap-4">
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Shop</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Treking Destinations</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Cycling Destinations</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Expeditions</a
+              >
+            </div>
+          </div>
+          <div class="footer-col flex flex-col gap-4">
+            <h4 class="text-white font-semibold">Cycling Destinations</h4>
+            <div class="links-col flex flex-col gap-4">
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Onroad Cycling</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Offorad Cycling</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Downhill Destinations</a
+              >
+            </div>
+          </div>
+          <div class="footer-col flex flex-col gap-4">
+            <h4 class="text-white font-semibold">Treking Destinations</h4>
+            <div class="links-col flex flex-col gap-4">
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >City Travels</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Hikings</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Treking</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Campings</a
+              >
+            </div>
+          </div>
+          <div class="footer-col flex flex-col gap-4">
+            <h4 class="text-white font-semibold">See Also</h4>
+            <div class="links-col flex flex-col gap-4">
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >About Us</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Shop</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >Blogs</a
+              >
+              <a
+                href=""
+                class="text-stone-200 hover:text-brand-200 hover:underline"
+                >User Login</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <a
+          href="https://rangin.com.np/"
+          target="_blank"
+          class="flex gap-2 text-white items-center justify-center mt-8"
+          >Powered By: <img src="./assets/rangin-logo.png" class="w-24" alt=""
+        /></a>
+      </div>
+    </footer>
+  </body>
+</html>
