@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nepal Mountain Bike</title>
+    <title>Trecking Destinations</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="stylesheet"
@@ -234,13 +234,13 @@
     </nav>
 
     <section
-      class="product-header mt-10 md:mt-12 lg:mt-20 bg-gradient-to-b from-brand-900 to-brand-600 bg-[url('https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864')]"
+      class="shop-header mt-10 md:mt-12 lg:mt-20 bg-gradient-to-b from-brand-900 to-brand-600 bg-[url('https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864')]"
     >
       <div
         class="container mx-auto py-16 px-4 flex flex-col items-center justify-center"
       >
         <h1 class="text-3xl text-center font-semibold text-stone-200">
-          Shop / Bikes / Red Hornet Cannondale
+          Shop / Bikes
         </h1>
         <div class="ctas flex gap-4 mt-6">
           <a
@@ -257,362 +257,344 @@
       </div>
     </section>
 
-    <section class="display-grid">
+    <section class="shop-body">
       <div
-        class="container mx-auto py-16 px-4 grid grid-cols-1 lg:grid-cols-2 gap-8"
+        class="container mx-auto py-16 px-4 grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-0"
       >
-        <div class="img-grid flex flex-col gap-4">
+        <div class="filter-panel-md hidden md:flex col-span-1 flex-col">
+          <h4 class="font-semibold">Filters</h4>
+          <div class="filter-group flex flex-col text-stone-600 gap-3 mt-5">
+            <h4 class="font-semibold text-brand-900">Category</h4>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              Aluminium Made
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              Aluminium Made
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              Aluminium Made
+            </button>
+          </div>
+          <div class="filter-group flex flex-col text-stone-600 gap-3 mt-8">
+            <h4 class="font-semibold text-brand-900">Price</h4>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              10,000 - 15,000
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              16,000 - 20,000
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              21,000 - 25,000
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              26,000 - 30,000
+            </button>
+          </div>
+          <div class="filter-group flex flex-col text-stone-600 gap-3 mt-8">
+            <h4 class="font-semibold text-brand-900">Category</h4>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              Aluminium Made
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              Aluminium Made
+            </button>
+            <button
+              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
+            >
+              Aluminium Made
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-panel-sm flex flex-col gap-5 md:hidden col-span-4">
+          <div class="filter-item flex flex-col items-start gap-2">
+            <span class="text-stone-500 text-sm">Category</span>
+            <select
+              class="text-brand-900 font-semibold border p-3 w-full"
+              name=""
+              id=""
+            >
+              <option value="price">All</option>
+              <option value="price">Price</option>
+              <option value="price">Price</option>
+              <option value="price">Price</option>
+            </select>
+          </div>
+          <div class="filter-item flex flex-col items-start gap-2">
+            <span class="text-stone-500 text-sm">Price</span>
+            <select
+              class="text-brand-900 font-semibold border p-3 w-full"
+              name=""
+              id=""
+            >
+              <option value="price">All</option>
+              <option value="price">Price</option>
+              <option value="price">Price</option>
+              <option value="price">Price</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="items-panel flex flex-col gap-5 col-span-4">
+          <div class="row flex justify-between items-center">
+            <h4 class="font-semibold">55 Items</h4>
+            <div class="sort flex gap-4">
+              <span class="flex items-center gap-1">
+                <span class="text-stone-500">Sort By:</span>
+                <select class="text-brand-900 font-semibold" name="" id="">
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                </select>
+              </span>
+            </div>
+          </div>
           <div
-            class="main-img bg-gradient-to-b from-black via-brand-900 to-white border p-8"
+            class="items-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
           >
-            <img
-              class="object-cover h-full w-full"
-              src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/SupercaliberSLR99XXAXS-24-41725-C-Primary"
-              alt=""
-            />
-          </div>
-          <div class="sub-imgs grid grid-cols-4 md:grid-cols-5 gap-4">
             <div
-              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
+              class="item-card p-6 border hover:border-brand-900 flex flex-col gap-6 items-center"
             >
-              <img
-                class="object-cover h-full w-full"
-                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
-                alt=""
-              />
-            </div>
-            <div
-              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
-            >
-              <img
-                class="object-cover h-full w-full"
-                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
-                alt=""
-              />
-            </div>
-            <div
-              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
-            >
-              <img
-                class="object-cover h-full w-full"
-                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
-                alt=""
-              />
-            </div>
-            <div
-              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
-            >
-              <img
-                class="object-cover h-full w-full"
-                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
-                alt=""
-              />
-            </div>
-            <div
-              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
-            >
-              <img
-                class="object-cover h-full w-full"
-                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-
-        <div class="product-info flex flex-col items-start gap-5">
-          <span class="py-2 px-3 border text-stone-600">Downhill Bikes</span>
-          <h2 class="text-4xl font-bold lg:w-7/12">
-            Feul EX 9.9 XX ASX T-Type Gen 6 Bike
-          </h2>
-          <div class="pricing grid grid-cols-2 items-center gap-4">
-            <div class="left">
-              <p class="text-3xl font-bold">NRs. 12,000</p>
-              <span class="text-sm text-stone-600"
-                >Price may vary according to your usage</span
-              >
-            </div>
-            <div
-              class="right px-3 py-2 bg-red-100 flex items-center justify-center gap-2 h-fit"
-            >
-              <p class="font-semibold text-lg line-through">14999</p>
-              <p class="text-sm">10% Discount</p>
-            </div>
-          </div>
-
-          <p class="w-fit lg:w-8/12 text-stone-500">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
-            magni amet ex eveniet, voluptas sapiente earum repellendus non est
-            nesciunt facere dolores optio explicabo beatae asperiores debitis
-            fugiat, veniam eos. Lorem ipsum dolor sit amet consectetur
-            adipisicing.
-          </p>
-
-          <div class="info-col lg:w-7/12 flex flex-col gap-2">
-            <span class="text-sm font-semibold">Sizes</span>
-            <div class="info-row flex gap-3 flex-wrap">
-              <button
-                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                MD (29” Wheel)
-              </button>
-              <button
-                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                MD (29” Wheel)
-              </button>
-              <button
-                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                MD (29” Wheel)
-              </button>
-              <button
-                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                MD (29” Wheel)
-              </button>
-            </div>
-          </div>
-          <div class="info-col lg:w-6/12 flex flex-col gap-2">
-            <span class="text-sm font-semibold">Color Options</span>
-            <div class="info-row flex gap-3 flex-wrap">
-              <button
-                class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 border-brand-900 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                <span class="h-full w-full rounded-full bg-stone-200"></span>
-              </button>
-              <button
-                class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                <span class="h-full w-full rounded-full bg-red-400"></span>
-              </button>
-
-              <button
-                class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                <span class="h-full w-full rounded-full bg-yellow-400"></span>
-              </button>
-            </div>
-          </div>
-
-          <a
-            href="#"
-            class="font-semibold mt-4 w-full lg:w-8/12 flex items-center justify-center bg-brand-900 text-white px-6 py-4 hover:bg-brand-600 transition-colors"
-            >Proceed to Reservation</a
-          >
-        </div>
-      </div>
-    </section>
-
-    <section class="res-summary">
-      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
-        <h3 class="font-bold text-3xl text-brand-400">
-          <span class="text-stone-800">Reservation </span> & Summary
-        </h3>
-
-        <div class="tab-panel flex flex-col border">
-          <div class="tab-filters flex">
-            <button
-              class="px-4 md:px-6 py-3 hover:transition-all font-semibold active-tab"
-              id="tab-i"
-            >
-              Reservations
-            </button>
-            <button
-              class="px-4 md:px-6 py-3 border hover:transition-all text-stone-500 hover:text-brand-900 bg-stone-100 font-semibold"
-              id="tab-ii"
-            >
-              Specifications
-            </button>
-            <button
-              class="px-4 md:px-6 py-3 border hover:transition-all text-stone-500 hover:text-brand-900 bg-stone-100 font-semibold"
-              id="tab-iii"
-            >
-              Inclusions
-            </button>
-          </div>
-
-          <div class="panels">
-            <div class="form-summary p-4 md:p-6" id="tab-content-i">
-              <form class="grid grid-cols-4 gap-6">
-                <div
-                  class="left col-span-4 lg:col-span-3 grid grid-cols-2 gap-6"
-                >
-                  <div class="input col-span-2 flex flex-col gap-2">
-                    <label for="name" class="font-semibold text-sm"
-                      >Reservators Name</label
-                    >
-                    <input
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Full Name"
-                    />
-                  </div>
-
-                  <div
-                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
-                  >
-                    <label for="number" class="font-semibold text-sm"
-                      >Contact Number</label
-                    >
-                    <input
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      type="number"
-                      name="number"
-                      id="number"
-                      placeholder="+977"
-                    />
-                  </div>
-                  <div
-                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
-                  >
-                    <label for="email" class="font-semibold text-sm"
-                      >Email Address</label
-                    >
-                    <input
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="someone@gmail.com"
-                    />
-                  </div>
-                  <div
-                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
-                  >
-                    <label for="start-date" class="font-semibold text-sm"
-                      >Starting day of your trip</label
-                    >
-                    <input
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      type="date"
-                      name="start-date"
-                      id="start-date"
-                      placeholder="mm/dd/yyyy"
-                    />
-                  </div>
-
-                  <div
-                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
-                  >
-                    <label for="end-date" class="font-semibold text-sm"
-                      >Ending day of your trip</label
-                    >
-                    <input
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      type="date"
-                      name="end-date"
-                      id="end-date"
-                      placeholder="mm/dd/yyyy"
-                    />
-                  </div>
-
-                  <div
-                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
-                  >
-                    <label for="bike" class="font-semibold text-sm"
-                      >Selected Bike</label
-                    >
-                    <select
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      name="bike"
-                      id="bike"
-                    >
-                      <option value="bike">Red Hornet Cannondale</option>
-                      <option value="bike">Red Hornet Cannondale</option>
-                      <option value="bike">Red Hornet Cannondale</option>
-                      <option value="bike">Red Hornet Cannondale</option>
-                    </select>
-                  </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <span class="text-sm font-semibold">Color Options</span>
-                    <div class="info-row flex gap-3 flex-wrap">
-                      <button
-                        class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 border-brand-900 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-                      >
-                        <span
-                          class="h-full w-full rounded-full bg-stone-200"
-                        ></span>
-                      </button>
-                      <button
-                        class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-                      >
-                        <span
-                          class="h-full w-full rounded-full bg-red-400"
-                        ></span>
-                      </button>
-
-                      <button
-                        class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-                      >
-                        <span
-                          class="h-full w-full rounded-full bg-yellow-400"
-                        ></span>
-                      </button>
-                    </div>
-                  </div>
-
-                  <div
-                    class="row col-span-2 p-4 bg-green-100 flex justify-center items-center"
-                  >
-                    <p class="text-center">
-                      Not sure when to start your adventure? call us at
-                      <a class="font-semibold" href="">+977 9812345678</a> and
-                      get help.
-                    </p>
-                  </div>
+              <div class="item-cover w-full h-full">
+                <img
+                  class="object-cover object-center w-full h-full"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center w-full">
+                <h4 class="font-semibold text-md uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+                <div class="ctas flex gap-3 mt-4">
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center gap-2 border border-brand-900 text-brand-900 h-10 w-14 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+                    ><i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                  </a>
+                  <a
+                    href="./product.html"
+                    class="uppercase whitespace-nowrap flex items-center justify-center bg-brand-900 text-white h-10 w-10 hover:bg-brand-600 transition-colors"
+                    ><i class="fa-solid fa-eye"></i>
+                  </a>
                 </div>
+              </div>
+            </div>
 
-                <div class="right col-span-4 lg:col-span-1">
-                  <div
-                    class="summary bg-brand-900 p-6 h-full flex flex-col gap-6"
-                  >
-                    <p class="text-stone-300 font-semibold text-xl">
-                      Booking Summary
-                    </p>
-                    <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Start Date</span>
-                      <p class="text-white font-semibold">08 February, 2023</p>
-                    </div>
-                    <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">End Date</span>
-                      <p class="text-white font-semibold">08 February, 2023</p>
-                    </div>
-                    <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Total Days</span>
-                      <p class="text-white font-semibold">10 Days</p>
-                    </div>
-                    <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Bike</span>
-                      <p class="text-white font-semibold">
-                        White Horent Cannondale 29'
-                      </p>
-                    </div>
-                    <div class="line h-px bg-stone-500"></div>
-                    <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Total Price</span>
-                      <p class="text-white font-bold text-2xl">12,000.00</p>
-                    </div>
-                    <button
-                      type="submit"
-                      class="p-3 bg-stone-100 hover:bg-white font-semibold"
-                    >
-                      Proceed to Checkout
-                    </button>
-                  </div>
+            <div
+              class="item-card p-6 border hover:border-brand-900 flex flex-col gap-6 items-center"
+            >
+              <div class="item-cover w-full h-full">
+                <img
+                  class="object-cover object-center w-full h-full"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center w-full">
+                <h4 class="font-semibold text-md uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+                <div class="ctas flex gap-3 mt-4">
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center gap-2 border border-brand-900 text-brand-900 h-10 w-14 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+                    ><i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center bg-brand-900 text-white h-10 w-10 hover:bg-brand-600 transition-colors"
+                    ><i class="fa-solid fa-eye"></i>
+                  </a>
                 </div>
-              </form>
+              </div>
             </div>
 
-            <div class="specs p-4 md:p-6 bg-white hidden" id="tab-content-ii">
-              2nd tab
+            <div
+              class="item-card p-6 border hover:border-brand-900 flex flex-col gap-6 items-center"
+            >
+              <div class="item-cover w-full h-full">
+                <img
+                  class="object-cover object-center w-full h-full"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center w-full">
+                <h4 class="font-semibold text-md uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+                <div class="ctas flex gap-3 mt-4">
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center gap-2 border border-brand-900 text-brand-900 h-10 w-14 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+                    ><i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center bg-brand-900 text-white h-10 w-10 hover:bg-brand-600 transition-colors"
+                    ><i class="fa-solid fa-eye"></i>
+                  </a>
+                </div>
+              </div>
             </div>
 
-            <div class="specs p-4 md:p-6 hidden" id="tab-content-iii">
-              3rd tab
+            <div
+              class="item-card p-6 border hover:border-brand-900 flex flex-col gap-6 items-center"
+            >
+              <div class="item-cover w-full h-full">
+                <img
+                  class="object-cover object-center w-full h-full"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center w-full">
+                <h4 class="font-semibold text-md uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+                <div class="ctas flex gap-3 mt-4">
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center gap-2 border border-brand-900 text-brand-900 h-10 w-14 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+                    ><i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center bg-brand-900 text-white h-10 w-10 hover:bg-brand-600 transition-colors"
+                    ><i class="fa-solid fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item-card p-6 border hover:border-brand-900 flex flex-col gap-6 items-center"
+            >
+              <div class="item-cover w-full h-full">
+                <img
+                  class="object-cover object-center w-full h-full"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center w-full">
+                <h4 class="font-semibold text-md uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+                <div class="ctas flex gap-3 mt-4">
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center gap-2 border border-brand-900 text-brand-900 h-10 w-14 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+                    ><i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center bg-brand-900 text-white h-10 w-10 hover:bg-brand-600 transition-colors"
+                    ><i class="fa-solid fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="item-card p-6 border hover:border-brand-900 flex flex-col gap-6 items-center"
+            >
+              <div class="item-cover w-full h-full">
+                <img
+                  class="object-cover object-center w-full h-full"
+                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/italo-disc-D02.webp"
+                  alt=""
+                />
+              </div>
+              <div class="item-details flex flex-col gap-1 items-center w-full">
+                <h4 class="font-semibold text-md uppercase">
+                  Red hornet cannondale
+                </h4>
+                <h3 class="font-bold text-3xl text-stone-600">NRs. 12,000</h3>
+                <div class="ctas flex gap-3 mt-4">
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center gap-2 border border-brand-900 text-brand-900 h-10 w-14 hover:bg-brand-600 hover:border-brand-600 hover:text-white transition-colors"
+                    ><i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-bag-shopping text-sm"></i>
+                  </a>
+                  <a
+                    href="#"
+                    class="uppercase whitespace-nowrap flex items-center justify-center bg-brand-900 text-white h-10 w-10 hover:bg-brand-600 transition-colors"
+                    ><i class="fa-solid fa-eye"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row flex justify-between items-center">
+            <div class="pagination flex">
+              <button
+                class="flex items-center justify-center h-10 w-10 text-stone-500 border hover:border-brand-600 hover:bg-brand-600 hover:text-white transition-colors"
+              >
+                <i class="fa-solid fa-chevron-left"></i>
+              </button>
+              <button
+                class="flex items-center justify-center h-10 w-10 text-stone-500 hover:border hover:border-brand-600 hover:bg-brand-600 hover:text-white transition-colors"
+              >
+                1
+              </button>
+              <button
+                class="flex items-center justify-center h-10 w-10 text-stone-500 hover:border hover:border-brand-600 hover:bg-brand-600 hover:text-white transition-colors"
+              >
+                2
+              </button>
+              <button
+                class="flex items-center justify-center h-10 w-10 text-stone-500 hover:border hover:border-brand-600 hover:bg-brand-600 hover:text-white transition-colors"
+              >
+                3
+              </button>
+              <button
+                class="flex items-center justify-center h-10 w-10 text-stone-500 border hover:border-brand-600 hover:bg-brand-600 hover:text-white transition-colors"
+              >
+                <i class="fa-solid fa-chevron-right"></i>
+              </button>
+            </div>
+            <div class="sort flex gap-4">
+              <span class="flex items-center gap-1">
+                <span class="text-stone-500">Sort By:</span>
+                <select class="text-brand-900 font-semibold" name="" id="">
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                  <option value="price">Price</option>
+                </select>
+              </span>
             </div>
           </div>
         </div>
@@ -946,7 +928,5 @@
         /></a>
       </div>
     </footer>
-
-    <script src="./scripts/tab.js"></script>
   </body>
 </html>
