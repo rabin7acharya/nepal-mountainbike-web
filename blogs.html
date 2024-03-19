@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Trecking Destinations</title>
+    <title>Our Blogs / News</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <link
       rel="stylesheet"
@@ -234,13 +234,13 @@
     </nav>
 
     <section
-      class="shop-header mt-10 md:mt-12 lg:mt-20 bg-gradient-to-b from-brand-900 via-brand-800 to-brand-600 bg-[url('https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864')]"
+      class="shop-header mt-10 md:mt-12 lg:mt-20 bg-gradient-to-b from-brand-900 to-brand-600 bg-[url('https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864')]"
     >
       <div
         class="container mx-auto py-16 px-4 flex flex-col items-center justify-center"
       >
         <h1 class="text-3xl text-center font-semibold text-stone-200">
-          Treks / List
+          Our News / Article
         </h1>
         <div class="ctas flex gap-4 mt-6">
           <a
@@ -257,112 +257,8 @@
       </div>
     </section>
 
-    <section class="trek-body">
-      <div
-        class="container mx-auto py-16 px-4 grid grid-cols-1 md:grid-cols-5 gap-8 lg:gap-0"
-      >
-        <div class="filter-panel-md hidden md:flex col-span-1 flex-col">
-          <h4 class="font-semibold">Filters</h4>
-          <div class="filter-group flex flex-col text-stone-600 gap-3 mt-5">
-            <h4 class="font-semibold text-brand-900">Level</h4>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              Extreme
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              Hard
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              Medium
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              Beginner
-            </button>
-          </div>
-          <div class="filter-group flex flex-col text-stone-600 gap-3 mt-8">
-            <h4 class="font-semibold text-brand-900">Price</h4>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              10,000 - 15,000
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              16,000 - 20,000
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              21,000 - 25,000
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              26,000 - 30,000
-            </button>
-          </div>
-          <div class="filter-group flex flex-col text-stone-600 gap-3 mt-8">
-            <h4 class="font-semibold text-brand-900">Duration</h4>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              3-5 Days
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              5-8 Days
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              8-10
-            </button>
-            <button
-              class="w-fit hover:text-brand-900 hover:font-semibold transition-hover"
-            >
-              10 Days +
-            </button>
-          </div>
-        </div>
-
-        <div class="filter-panel-sm flex flex-col gap-5 md:hidden col-span-4">
-          <div class="filter-item flex flex-col items-start gap-2">
-            <span class="text-stone-500 text-sm">Category</span>
-            <select
-              class="text-brand-900 font-semibold border p-3 w-full"
-              name=""
-              id=""
-            >
-              <option value="price">All</option>
-              <option value="price">Price</option>
-              <option value="price">Price</option>
-              <option value="price">Price</option>
-            </select>
-          </div>
-          <div class="filter-item flex flex-col items-start gap-2">
-            <span class="text-stone-500 text-sm">Price</span>
-            <select
-              class="text-brand-900 font-semibold border p-3 w-full"
-              name=""
-              id=""
-            >
-              <option value="price">All</option>
-              <option value="price">Price</option>
-              <option value="price">Price</option>
-              <option value="price">Price</option>
-            </select>
-          </div>
-        </div>
-
+    <section class="blogs-body">
+      <div class="container mx-auto py-16 px-4 grid grid-cols-2">
         <div class="items-panel flex flex-col gap-5 col-span-4">
           <div class="row flex justify-between items-center">
             <h4 class="font-semibold">55 Items</h4>
@@ -370,298 +266,139 @@
               <span class="flex items-center gap-1">
                 <span class="text-stone-500">Sort By:</span>
                 <select class="text-brand-900 font-semibold" name="" id="">
-                  <option value="price">Price</option>
-                  <option value="price">Price</option>
-                  <option value="price">Price</option>
-                  <option value="price">Price</option>
+                  <option value="price">Latest</option>
+                  <option value="price">Oldest</option>
                 </select>
               </span>
             </div>
           </div>
-          <div class="items-grid grid gap-6 grid-cols-1 lg:grid-cols-3">
-            <div class="item-card border p-4 hover:border-brand-900 grid gap-4">
-              <div class="imgs h-48 grid grid-cols-3 grid-rows-2 gap-2">
-                <div class="img col-span-2 row-span-2">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://i.pinimg.com/564x/35/f4/68/35f468ae9926fe20d6a32dcf778e48cb.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="img col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
-                <div class="img h-full col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
+          <div class="items-grid grid grid-cols-1 gap-6 lg:grid-cols-2">
+            <div class="card grid lg:grid-cols-2 p-4 border gap-6">
+              <div class="card-img h-56">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://i.pinimg.com/564x/ca/14/eb/ca14eb2f37073871054ce348dc16bb75.jpg"
+                  alt=""
+                />
               </div>
+              <div
+                class="info-col flex flex-col gap-6 items-start justify-center"
+              >
+                <span class="py-2 px-3 border text-stone-600">Article</span>
+                <h3 class="font-bold text-2xl">
+                  Best ways to pack your bag before adventure
+                </h3>
 
-              <div class="info flex flex-col justify-center gap-4">
-                <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
-
-                <div class="info-head grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div class="info-col col-span-3 flex flex-col gap-[0.8rem]">
-                    <p class="font-bold whitespace-nowrap">Starting Price</p>
-                    <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                <div class="row flex gap-6">
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>08 Feb 2024</p>
                   </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Duration</p>
-                    <p class="whitespace-nowrap">12 Days</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-user"></i>
+                    <p>Rabin Acharya</p>
                   </div>
                 </div>
-
-                <div class="h-px bg-stone-200 w-full"></div>
-
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem voluptas officiis possimus magnam iure dolore tenetur
-                  totam praesentium repudiandae sit!
-                </p>
               </div>
             </div>
-            <div class="item-card border p-4 hover:border-brand-900 grid gap-4">
-              <div class="imgs h-48 grid grid-cols-3 grid-rows-2 gap-2">
-                <div class="img col-span-2 row-span-2">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://i.pinimg.com/564x/35/f4/68/35f468ae9926fe20d6a32dcf778e48cb.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="img col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
-                <div class="img h-full col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
+            <div class="card grid lg:grid-cols-2 p-4 border gap-6">
+              <div class="card-img h-56">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://i.pinimg.com/564x/ca/14/eb/ca14eb2f37073871054ce348dc16bb75.jpg"
+                  alt=""
+                />
               </div>
+              <div
+                class="info-col flex flex-col gap-6 items-start justify-center"
+              >
+                <span class="py-2 px-3 border text-stone-600">Article</span>
+                <h3 class="font-bold text-2xl">
+                  Best ways to pack your bag before adventure
+                </h3>
 
-              <div class="info flex flex-col justify-center gap-4">
-                <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
-
-                <div class="info-head grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div class="info-col col-span-3 flex flex-col gap-[0.8rem]">
-                    <p class="font-bold whitespace-nowrap">Starting Price</p>
-                    <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                <div class="row flex gap-6">
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>08 Feb 2024</p>
                   </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Duration</p>
-                    <p class="whitespace-nowrap">12 Days</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-user"></i>
+                    <p>Rabin Acharya</p>
                   </div>
                 </div>
-
-                <div class="h-px bg-stone-200 w-full"></div>
-
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem voluptas officiis possimus magnam iure dolore tenetur
-                  totam praesentium repudiandae sit!
-                </p>
               </div>
             </div>
-            <div class="item-card border p-4 hover:border-brand-900 grid gap-4">
-              <div class="imgs h-48 grid grid-cols-3 grid-rows-2 gap-2">
-                <div class="img col-span-2 row-span-2">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://i.pinimg.com/564x/35/f4/68/35f468ae9926fe20d6a32dcf778e48cb.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="img col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
-                <div class="img h-full col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
+            <div class="card grid lg:grid-cols-2 p-4 border gap-6">
+              <div class="card-img h-56">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://i.pinimg.com/564x/ca/14/eb/ca14eb2f37073871054ce348dc16bb75.jpg"
+                  alt=""
+                />
               </div>
+              <div
+                class="info-col flex flex-col gap-6 items-start justify-center"
+              >
+                <span class="py-2 px-3 border text-stone-600">Article</span>
+                <h3 class="font-bold text-2xl">
+                  Best ways to pack your bag before adventure
+                </h3>
 
-              <div class="info flex flex-col justify-center gap-4">
-                <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
-
-                <div class="info-head grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div class="info-col col-span-3 flex flex-col gap-[0.8rem]">
-                    <p class="font-bold whitespace-nowrap">Starting Price</p>
-                    <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                <div class="row flex gap-6">
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>08 Feb 2024</p>
                   </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Duration</p>
-                    <p class="whitespace-nowrap">12 Days</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-user"></i>
+                    <p>Rabin Acharya</p>
                   </div>
                 </div>
-
-                <div class="h-px bg-stone-200 w-full"></div>
-
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem voluptas officiis possimus magnam iure dolore tenetur
-                  totam praesentium repudiandae sit!
-                </p>
               </div>
             </div>
-            <div class="item-card border p-4 hover:border-brand-900 grid gap-4">
-              <div class="imgs h-48 grid grid-cols-3 grid-rows-2 gap-2">
-                <div class="img col-span-2 row-span-2">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://i.pinimg.com/564x/35/f4/68/35f468ae9926fe20d6a32dcf778e48cb.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="img col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
-                <div class="img h-full col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
+            <div class="card grid lg:grid-cols-2 p-4 border gap-6">
+              <div class="card-img h-56">
+                <img
+                  class="object-cover w-full h-full"
+                  src="https://i.pinimg.com/564x/ca/14/eb/ca14eb2f37073871054ce348dc16bb75.jpg"
+                  alt=""
+                />
               </div>
+              <div
+                class="info-col flex flex-col gap-6 items-start justify-center"
+              >
+                <span class="py-2 px-3 border text-stone-600">Article</span>
+                <h3 class="font-bold text-2xl">
+                  Best ways to pack your bag before adventure
+                </h3>
 
-              <div class="info flex flex-col justify-center gap-4">
-                <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
-
-                <div class="info-head grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div class="info-col col-span-3 flex flex-col gap-[0.8rem]">
-                    <p class="font-bold whitespace-nowrap">Starting Price</p>
-                    <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
+                <div class="row flex gap-6">
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-calendar-days"></i>
+                    <p>08 Feb 2024</p>
                   </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Duration</p>
-                    <p class="whitespace-nowrap">12 Days</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
-                  </div>
-                </div>
-
-                <div class="h-px bg-stone-200 w-full"></div>
-
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem voluptas officiis possimus magnam iure dolore tenetur
-                  totam praesentium repudiandae sit!
-                </p>
-              </div>
-            </div>
-            <div class="item-card border p-4 hover:border-brand-900 grid gap-4">
-              <div class="imgs h-48 grid grid-cols-3 grid-rows-2 gap-2">
-                <div class="img col-span-2 row-span-2">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://i.pinimg.com/564x/35/f4/68/35f468ae9926fe20d6a32dcf778e48cb.jpg"
-                    alt=""
-                  />
-                </div>
-                <div class="img col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
-                <div class="img h-full col-span-1 row-span-1">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://cdnb.artstation.com/p/assets/images/images/045/540/629/large/daniel-chira-ls-mountainbike-evening.jpg?1642974864"
-                    alt=""
-                  />
-                </div>
-              </div>
-
-              <div class="info flex flex-col justify-center gap-4">
-                <h3 class="text-2xl font-bold">Annapurna Base Camp Trek</h3>
-
-                <div class="info-head grid grid-cols-2 md:grid-cols-3 gap-6">
-                  <div class="info-col col-span-3 flex flex-col gap-[0.8rem]">
-                    <p class="font-bold whitespace-nowrap">Starting Price</p>
-                    <h3 class="text-2xl font-bold leading-3">NRs. 12000</h3>
-                  </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Duration</p>
-                    <p class="whitespace-nowrap">12 Days</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
-                  </div>
-                  <div class="info-col flex flex-col gap-2">
-                    <p class="font-bold whitespace-nowrap">Level</p>
-                    <p class="whitespace-nowrap">Intermediate</p>
+                  <div
+                    class="info-col text-stone-600 flex gap-2 items-center justify-center"
+                  >
+                    <i class="fa-regular fa-user"></i>
+                    <p>Rabin Acharya</p>
                   </div>
                 </div>
-
-                <div class="h-px bg-stone-200 w-full"></div>
-
-                <p>
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Autem voluptas officiis possimus magnam iure dolore tenetur
-                  totam praesentium repudiandae sit!
-                </p>
               </div>
             </div>
           </div>
