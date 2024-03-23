@@ -51,12 +51,12 @@
         <div class="left flex flex-col gap-3">
           <div class="upper-links hidden lg:flex gap-6">
             <a
-              href="#"
+              href="./about.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >About Us</a
             >
             <a
-              href="#"
+              href="./faq.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >FAQ</a
             >
@@ -71,40 +71,51 @@
               >Shop</a
             >
             <a
-              href="#"
+              href="./blogs.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Blogs</a
             >
             <a
-              href="#"
+              href="./repair-portal.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Repairs</a
             >
             <a
-              href="#"
+              href="./contact.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Contact</a
             >
           </div>
           <div class="lower-links flex items-center gap-2">
             <div
-              class="hamburger border border-stone-600 p-2 h-full group hover:bg-brand-600 hover:border-brand-600 flex flex-col gap-[4px] justify-center items-start cursor-pointer"
+              class="ham-icon border border-stone-600 h-8 p-2 group hover:bg-brand-600 hover:border-brand-600 sm:flex lg:hidden flex-col gap-[4px] items-center justify-center cursor-pointer"
+              id="ham-icon"
             >
-              <div
-                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
-              <div
-                class="line h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
-              <div
-                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
+              <div class="lines flex gap-1 flex-col h-fit w-fit">
+                <div
+                  class="line-i h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+                <div
+                  class="line-ii h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+                <div
+                  class="line-iii h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+              </div>
             </div>
-            <div class="lower-links hidden lg:flex gap-0">
+
+            <div class="lower-links hidden lg:flex gap-2 items-center gap-0">
+              <a
+                href="./index.html"
+                class="h-8 w-8 flex items-center justify-center border border-stone-600 text-white hover:bg-brand-600 hover:border-brand-600"
+              >
+                <i class="fa-solid fa-house text-sm"></i>
+              </a>
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./treks.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >Trecks</span
+                  >Trecks</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -124,9 +135,10 @@
               </div>
 
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./mtb-tours.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >MTB Tours</span
+                  >MTB Tours</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -146,9 +158,10 @@
               </div>
 
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./expeditions.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >Expeditions</span
+                  >Expeditions</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -224,18 +237,25 @@
           </div>
           <div class="lower-links flex gap-6">
             <a
-              href="#"
-              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
+              href="./login.html"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-1 transition-colors"
               ><i class="fa-regular fa-user text-lg md:text-sm"></i>
               <span class="hidden md:block">Login</span>
             </a>
             <a
-              href="#"
+              href="./cart.html"
               class="uppercase hidden md:block whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
               ><i class="fa-solid fa-bag-shopping text-sm"></i>
               <span class="">Cart</span>
             </a>
           </div>
+        </div>
+      </div>
+      <div class="ham-menu relative hidden" id="ham-menu">
+        <div
+          class="ham-menu-content absolute fixed p-4 bg-brand-900 border-t-4 border-brand-400 absolute w-full h-screen left-0 top-0 right-0 bg-brand-900"
+        >
+          hello
         </div>
       </div>
     </nav>
@@ -424,22 +444,23 @@
               class="info-secondary order-4 flex flex-wrap md:flex-col gap-5"
             >
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Duration</p>
-                <p>11 Days 8 hours</p>
+                <p class="font-bold">Distance</p>
+                <p>10.5 KM</p>
               </div>
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Trip Style</p>
-                <p>Hiking, Trekking</p>
+                <p class="font-bold">Level</p>
+                <p>Intermediate</p>
               </div>
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Accomodation Type</p>
-                <p>Self, Hotel, Camping</p>
+                <p class="font-bold">Route Type</p>
+                <p>Downhill, City</p>
               </div>
             </div>
           </div>
 
           <div
             class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
+            id="card"
           >
             <div class="info-head order-2 lg:order-1 flex flex-col gap-5">
               <h3 class="text-2xl font-bold">
@@ -459,7 +480,7 @@
               class="info-img order-1 lg:order-2 flex justify-center items-center h-64 overflow-hidden"
             >
               <img
-                src="https://i.pinimg.com/736x/37/9a/92/379a922b48f3ca47c0ee6f4f0d2ed161.jpg"
+                src="https://i.pinimg.com/564x/5c/2a/56/5c2a564cfdcb3d991a1b4b61f907887e.jpg"
                 alt=""
               />
             </div>
@@ -485,22 +506,23 @@
               class="info-secondary order-4 flex flex-wrap md:flex-col gap-5"
             >
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Duration</p>
-                <p>11 Days 8 hours</p>
+                <p class="font-bold">Distance</p>
+                <p>10.5 KM</p>
               </div>
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Trip Style</p>
-                <p>Hiking, Trekking</p>
+                <p class="font-bold">Level</p>
+                <p>Intermediate</p>
               </div>
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Accomodation Type</p>
-                <p>Self, Hotel, Camping</p>
+                <p class="font-bold">Route Type</p>
+                <p>Downhill, City</p>
               </div>
             </div>
           </div>
 
           <div
             class="hov-card p-4 lg:p-6 border border-stone-300 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-8"
+            id="card"
           >
             <div class="info-head order-2 lg:order-1 flex flex-col gap-5">
               <h3 class="text-2xl font-bold">
@@ -520,7 +542,7 @@
               class="info-img order-1 lg:order-2 flex justify-center items-center h-64 overflow-hidden"
             >
               <img
-                src="https://i.pinimg.com/564x/50/8f/35/508f35aac13a73934599b6462118805d.jpg"
+                src="https://i.pinimg.com/564x/5c/2a/56/5c2a564cfdcb3d991a1b4b61f907887e.jpg"
                 alt=""
               />
             </div>
@@ -546,16 +568,16 @@
               class="info-secondary order-4 flex flex-wrap md:flex-col gap-5"
             >
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Duration</p>
-                <p>11 Days 8 hours</p>
+                <p class="font-bold">Distance</p>
+                <p>10.5 KM</p>
               </div>
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Trip Style</p>
-                <p>Hiking, Trekking</p>
+                <p class="font-bold">Level</p>
+                <p>Intermediate</p>
               </div>
               <div class="info-col flex flex-col gap-2">
-                <p class="font-bold">Accomodation Type</p>
-                <p>Self, Hotel, Camping</p>
+                <p class="font-bold">Route Type</p>
+                <p>Downhill, City</p>
               </div>
             </div>
           </div>
@@ -945,7 +967,7 @@
           <div
             class="card bg-gradient-to-r from-brand-900 via-brand-800 to-brand-900 hover:bg-brand-800 grid lg:grid-cols-2 p-4 gap-6"
           >
-            <div class="card-img h-56 ">
+            <div class="card-img h-56">
               <img
                 class="object-cover w-full h-full"
                 src="https://i.pinimg.com/564x/ca/14/eb/ca14eb2f37073871054ce348dc16bb75.jpg"
@@ -1688,7 +1710,8 @@
       </div>
     </footer>
 
-    <script src="./scripts/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/ham.js"></script>
     <script src="./scripts/slider.js"></script>
   </body>
 </html>

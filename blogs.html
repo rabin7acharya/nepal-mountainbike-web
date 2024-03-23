@@ -44,12 +44,12 @@
         <div class="left flex flex-col gap-3">
           <div class="upper-links hidden lg:flex gap-6">
             <a
-              href="#"
+              href="./about.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >About Us</a
             >
             <a
-              href="#"
+              href="./faq.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >FAQ</a
             >
@@ -59,45 +59,56 @@
               >Events</a
             > -->
             <a
-              href="#"
+              href="./shop.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Shop</a
             >
             <a
-              href="#"
+              href="./blogs.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Blogs</a
             >
             <a
-              href="#"
+              href="./repair-portal.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Repairs</a
             >
             <a
-              href="#"
+              href="./contact.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Contact</a
             >
           </div>
           <div class="lower-links flex items-center gap-2">
             <div
-              class="hamburger border border-stone-600 p-2 h-full group hover:bg-brand-600 hover:border-brand-600 flex flex-col gap-[4px] justify-center items-start cursor-pointer"
+              class="ham-icon border border-stone-600 h-8 p-2 group hover:bg-brand-600 hover:border-brand-600 sm:flex lg:hidden flex-col gap-[4px] items-center justify-center cursor-pointer"
+              id="ham-icon"
             >
-              <div
-                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
-              <div
-                class="line h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
-              <div
-                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
+              <div class="lines flex gap-1 flex-col h-fit w-fit">
+                <div
+                  class="line-i h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+                <div
+                  class="line-ii h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+                <div
+                  class="line-iii h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+              </div>
             </div>
-            <div class="lower-links hidden lg:flex gap-0">
+
+            <div class="lower-links hidden lg:flex gap-2 items-center gap-0">
+              <a
+                href="./index.html"
+                class="h-8 w-8 flex items-center justify-center border border-stone-600 text-white hover:bg-brand-600 hover:border-brand-600"
+              >
+                <i class="fa-solid fa-house text-sm"></i>
+              </a>
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./treks.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >Trecks</span
+                  >Trecks</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -117,9 +128,10 @@
               </div>
 
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./mtb-tours.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >MTB Tours</span
+                  >MTB Tours</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -139,9 +151,10 @@
               </div>
 
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./expeditions.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >Expeditions</span
+                  >Expeditions</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -217,18 +230,25 @@
           </div>
           <div class="lower-links flex gap-6">
             <a
-              href="#"
-              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
+              href="./login.html"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-1 transition-colors"
               ><i class="fa-regular fa-user text-lg md:text-sm"></i>
               <span class="hidden md:block">Login</span>
             </a>
             <a
-              href="#"
+              href="./cart.html"
               class="uppercase hidden md:block whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
               ><i class="fa-solid fa-bag-shopping text-sm"></i>
               <span class="">Cart</span>
             </a>
           </div>
+        </div>
+      </div>
+      <div class="ham-menu relative hidden" id="ham-menu">
+        <div
+          class="ham-menu-content absolute fixed p-4 bg-brand-900 border-t-4 border-brand-400 absolute w-full h-screen left-0 top-0 right-0 bg-brand-900"
+        >
+          hello
         </div>
       </div>
     </nav>
@@ -773,5 +793,8 @@
         /></a>
       </div>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/ham.js"></script>
   </body>
 </html>

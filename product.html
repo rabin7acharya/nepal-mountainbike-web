@@ -44,12 +44,12 @@
         <div class="left flex flex-col gap-3">
           <div class="upper-links hidden lg:flex gap-6">
             <a
-              href="#"
+              href="./about.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >About Us</a
             >
             <a
-              href="#"
+              href="./faq.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >FAQ</a
             >
@@ -59,45 +59,56 @@
               >Events</a
             > -->
             <a
-              href="#"
+              href="./shop.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Shop</a
             >
             <a
-              href="#"
+              href="./blogs.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Blogs</a
             >
             <a
-              href="#"
+              href="./repair-portal.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Repairs</a
             >
             <a
-              href="#"
+              href="./contact.html"
               class="text-sm whitespace-nowrap text-stone-300 hover:text-brand-200 hover:underline transition-colors"
               >Contact</a
             >
           </div>
           <div class="lower-links flex items-center gap-2">
             <div
-              class="hamburger border border-stone-600 p-2 h-full group hover:bg-brand-600 hover:border-brand-600 flex flex-col gap-[4px] justify-center items-start cursor-pointer"
+              class="ham-icon border border-stone-600 h-8 p-2 group hover:bg-brand-600 hover:border-brand-600 sm:flex lg:hidden flex-col gap-[4px] items-center justify-center cursor-pointer"
+              id="ham-icon"
             >
-              <div
-                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
-              <div
-                class="line h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
-              <div
-                class="line h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
-              ></div>
+              <div class="lines flex gap-1 flex-col h-fit w-fit">
+                <div
+                  class="line-i h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+                <div
+                  class="line-ii h-[1.5px] w-3 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+                <div
+                  class="line-iii h-[1.5px] w-5 bg-stone-300 group-hover:bg-white rounded-full"
+                ></div>
+              </div>
             </div>
-            <div class="lower-links hidden lg:flex gap-0">
+
+            <div class="lower-links hidden lg:flex gap-2 items-center gap-0">
+              <a
+                href="./index.html"
+                class="h-8 w-8 flex items-center justify-center border border-stone-600 text-white hover:bg-brand-600 hover:border-brand-600"
+              >
+                <i class="fa-solid fa-house text-sm"></i>
+              </a>
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./treks.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >Trecks</span
+                  >Trecks</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -117,9 +128,10 @@
               </div>
 
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./mtb-tours.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >MTB Tours</span
+                  >MTB Tours</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -139,9 +151,10 @@
               </div>
 
               <div class="group flex items-center justify-center">
-                <span
+                <a
+                  href="./expeditions.html"
                   class="uppercase px-3 py-2 whitespace-nowrap cursor-pointer text-stone-200 group-hover:bg-brand-700 transition-colors"
-                  >Expeditions</span
+                  >Expeditions</a
                 >
                 <div
                   class="mega-menu hidden group-hover:flex flex-col transition-hover bg-brand-900 top-[5.5rem] w-full left-0 right-0 absolute"
@@ -217,18 +230,25 @@
           </div>
           <div class="lower-links flex gap-6">
             <a
-              href="#"
-              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
+              href="./login.html"
+              class="uppercase whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-1 transition-colors"
               ><i class="fa-regular fa-user text-lg md:text-sm"></i>
               <span class="hidden md:block">Login</span>
             </a>
             <a
-              href="#"
+              href="./cart.html"
               class="uppercase hidden md:block whitespace-nowrap text-stone-200 hover:text-brand-200 flex items-center justify-center gap-2 transition-colors"
               ><i class="fa-solid fa-bag-shopping text-sm"></i>
               <span class="">Cart</span>
             </a>
           </div>
+        </div>
+      </div>
+      <div class="ham-menu relative hidden" id="ham-menu">
+        <div
+          class="ham-menu-content absolute fixed p-4 bg-brand-900 border-t-4 border-brand-400 absolute w-full h-screen left-0 top-0 right-0 bg-brand-900"
+        >
+          hello
         </div>
       </div>
     </nav>
@@ -348,7 +368,7 @@
             adipisicing.
           </p>
 
-          <div class="info-col lg:w-7/12 flex flex-col gap-2">
+          <div class="info-col lg:w-10/12 flex flex-col gap-2">
             <span class="text-sm font-semibold">Sizes</span>
             <div class="info-row flex gap-3 flex-wrap">
               <button
@@ -373,33 +393,55 @@
               </button>
             </div>
           </div>
-          <div class="info-col lg:w-6/12 flex flex-col gap-2">
-            <span class="text-sm font-semibold">Color Options</span>
-            <div class="info-row flex gap-3 flex-wrap">
-              <button
-                class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 border-brand-900 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                <span class="h-full w-full rounded-full bg-stone-200"></span>
-              </button>
-              <button
-                class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                <span class="h-full w-full rounded-full bg-red-400"></span>
-              </button>
 
-              <button
-                class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-              >
-                <span class="h-full w-full rounded-full bg-yellow-400"></span>
-              </button>
+          <div class="info-col lg:w-7/12 flex gap-6">
+            <div class="info-col flex flex-col gap-2">
+              <label for="quantity" class="font-semibold text-sm"
+                >Quantity
+              </label>
+              <input
+                class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                type="number"
+                name="quantity"
+                id="quantity"
+                placeholder="1"
+              />
+            </div>
+            <div class="info-col flex flex-col gap-2">
+              <span class="text-sm font-semibold">Color Options</span>
+              <div class="info-row flex gap-3 flex-wrap">
+                <button
+                  class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 border-brand-900 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+                >
+                  <span class="h-full w-full rounded-full bg-stone-200"></span>
+                </button>
+                <button
+                  class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+                >
+                  <span class="h-full w-full rounded-full bg-red-400"></span>
+                </button>
+
+                <button
+                  class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+                >
+                  <span class="h-full w-full rounded-full bg-yellow-400"></span>
+                </button>
+              </div>
             </div>
           </div>
 
-          <a
-            href="#"
-            class="font-semibold mt-4 w-full lg:w-8/12 flex items-center justify-center bg-brand-900 text-white px-6 py-4 hover:bg-brand-600 transition-colors"
-            >Proceed to Reservation</a
-          >
+          <div class="info-col flex gap-4 mt-2">
+            <a
+              href=""
+              class="font-semibold w-full whitespace-nowrap flex items-center justify-center border border-brand-900 px-6 py-4 hover:bg-brand-600 hover:text-white hover:border-brand-600 transition-all"
+              >Add to Cart</a
+            >
+            <a
+              href="#"
+              class="font-semibold w-full whitespace-nowrap flex items-center justify-center bg-brand-900 text-white px-6 py-4 hover:bg-brand-600 transition-colors"
+              >Proceed to Checkout</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -407,7 +449,7 @@
     <section class="res-summary">
       <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
         <h3 class="font-bold text-3xl text-brand-400">
-          <span class="text-stone-800">Reservation </span> & Summary
+          <span class="text-stone-800">Checkout </span> & Specifications
         </h3>
 
         <div class="tab-panel flex flex-col border">
@@ -416,7 +458,7 @@
               class="px-4 md:px-6 py-3 hover:transition-all font-semibold active-tab"
               id="tab-i"
             >
-              Reservations
+              Shipping Details
             </button>
             <button
               class="px-4 md:px-6 py-3 border hover:transition-all text-stone-500 hover:text-brand-900 bg-stone-100 font-semibold"
@@ -482,6 +524,39 @@
                   <div
                     class="input col-span-2 md:col-span-1 flex flex-col gap-2"
                   >
+                    <label for="shipping-address" class="font-semibold text-sm"
+                      >Shipping Address</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="text"
+                      name="shipping-address"
+                      id="shipping-address"
+                      placeholder="someone@gmail.com"
+                    />
+                  </div>
+
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="bike" class="font-semibold text-sm"
+                      >Selected Bike</label
+                    >
+                    <select
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      name="bike"
+                      id="bike"
+                    >
+                      <option value="bike">Red Hornet Cannondale</option>
+                      <option value="bike">Red Hornet Cannondale</option>
+                      <option value="bike">Red Hornet Cannondale</option>
+                      <option value="bike">Red Hornet Cannondale</option>
+                    </select>
+                  </div>
+
+                  <!-- <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
                     <label for="start-date" class="font-semibold text-sm"
                       >Starting day of your trip</label
                     >
@@ -507,59 +582,13 @@
                       id="end-date"
                       placeholder="mm/dd/yyyy"
                     />
-                  </div>
-
-                  <div
-                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
-                  >
-                    <label for="bike" class="font-semibold text-sm"
-                      >Selected Bike</label
-                    >
-                    <select
-                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
-                      name="bike"
-                      id="bike"
-                    >
-                      <option value="bike">Red Hornet Cannondale</option>
-                      <option value="bike">Red Hornet Cannondale</option>
-                      <option value="bike">Red Hornet Cannondale</option>
-                      <option value="bike">Red Hornet Cannondale</option>
-                    </select>
-                  </div>
-
-                  <div class="info-col flex flex-col gap-2">
-                    <span class="text-sm font-semibold">Color Options</span>
-                    <div class="info-row flex gap-3 flex-wrap">
-                      <button
-                        class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 border-brand-900 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-                      >
-                        <span
-                          class="h-full w-full rounded-full bg-stone-200"
-                        ></span>
-                      </button>
-                      <button
-                        class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-                      >
-                        <span
-                          class="h-full w-full rounded-full bg-red-400"
-                        ></span>
-                      </button>
-
-                      <button
-                        class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
-                      >
-                        <span
-                          class="h-full w-full rounded-full bg-yellow-400"
-                        ></span>
-                      </button>
-                    </div>
-                  </div>
+                  </div> -->
 
                   <div
                     class="row col-span-2 p-4 bg-green-100 flex justify-center items-center"
                   >
                     <p class="text-center">
-                      Not sure when to start your adventure? call us at
+                      Not sure what to buy? call us at
                       <a class="font-semibold" href="">+977 9812345678</a> and
                       get help.
                     </p>
@@ -571,26 +600,21 @@
                     class="summary bg-brand-900 p-6 h-full flex flex-col gap-6"
                   >
                     <p class="text-stone-300 font-semibold text-xl">
-                      Booking Summary
+                      Order Summary
                     </p>
                     <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Start Date</span>
+                      <span class="text-stone-200 text-sm">Product Name</span>
                       <p class="text-white font-semibold">08 February, 2023</p>
                     </div>
                     <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">End Date</span>
-                      <p class="text-white font-semibold">08 February, 2023</p>
+                      <span class="text-stone-200 text-sm">Quantity </span>
+                      <p class="text-white font-semibold">1 Pcs</p>
                     </div>
                     <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Total Days</span>
-                      <p class="text-white font-semibold">10 Days</p>
+                      <span class="text-stone-200 text-sm">Discount </span>
+                      <p class="text-white font-semibold">15%</p>
                     </div>
-                    <div class="item flex flex-col gap-2">
-                      <span class="text-stone-200 text-sm">Bike</span>
-                      <p class="text-white font-semibold">
-                        White Horent Cannondale 29'
-                      </p>
-                    </div>
+
                     <div class="line h-px bg-stone-500"></div>
                     <div class="item flex flex-col gap-2">
                       <span class="text-stone-200 text-sm">Total Price</span>
@@ -946,7 +970,8 @@
         /></a>
       </div>
     </footer>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="./scripts/ham.js"></script>
     <script src="./scripts/tab.js"></script>
   </body>
 </html>
