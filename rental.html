@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -822,137 +822,521 @@
         </div>
       </div>
     </nav>
-    <section class="cart-section">
-      <div class="container mx-auto py-32 px-4 flex flex-col gap-8">
-        <div class="cart-header flex flex-col gap-1 pb-4 border-b">
-          <h2 class="text-3xl font-bold uppercase">Your Cart</h2>
-          <h4 class="font-bold text-xl">You have (2) items in cart</h4>
+
+    <section
+      class="product-header mt-10 md:mt-12 lg:mt-20 bg-gradient-to-b from-brand-900 via-brand-900 to-brand-600"
+    >
+      <div
+        class="container mx-auto py-16 px-4 flex flex-col items-center justify-center"
+      >
+        <h1 class="text-3xl text-center font-semibold text-stone-200">
+          Rentals / Bikes / Red Hornet Cannondale
+        </h1>
+        <div class="ctas flex gap-4 mt-6">
+          <a
+            href="#product-body"
+            class="uppercase whitespace-nowrap font-semibold bg-stone-200 text-brand-900 px-6 py-3 hover:bg-white transition-colors"
+            >View Details
+          </a>
+          <a
+            href="https://youtu.be/LR7o2g9kKRc"
+            target="_blank"
+            rel="noopener"
+            class="uppercase whitespace-nowrap flex items-center gap-2 font-semibold border border-stone-200 text-stone-200 px-6 py-3 hover:bg-white hover:border-white hover:text-brand-900 transition-colors"
+            ><i class="fa-solid fa-play"></i>Know More
+          </a>
         </div>
+      </div>
+    </section>
 
-        <div
-          class="cart-grid grid grid-cols-1 lg:grid-cols-4 items-start gap-12 lg:gap-8"
-        >
-          <div class="left lg:col-span-3 flex flex-col gap-6">
+    <section class="display-grid" id="product-body">
+      <div
+        class="container mx-auto py-16 px-4 grid grid-cols-1 lg:grid-cols-2 gap-8"
+      >
+        <div class="img-grid flex flex-col gap-4">
+          <div
+            class="main-img bg-gradient-to-b from-black via-brand-900 to-white border p-8"
+          >
+            <img
+              class="object-cover h-full w-full"
+              src="https://media.trekbikes.com/image/upload/f_auto,fl_progressive:semi,q_auto,w_1920,h_1440,c_pad/SupercaliberSLR99XXAXS-24-41725-C-Primary"
+              alt=""
+            />
+          </div>
+          <div class="sub-imgs grid grid-cols-4 md:grid-cols-5 gap-4">
             <div
-              class="cart-item border p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:items-center gap-4 md:gap-6 lg:gap-8"
+              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
             >
-              <div
-                class="image col-span-1 h-48 md:h-full md:row-span-3 lg:row-span-1 p-2 border"
-              >
-                <img
-                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/COLNAGO-V4Rs%20TEAM%20MAN%202023-fondobianco-laterale.webp"
-                  alt="Product Image"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div
-                class="details md:row-span-1 col-span-1 lg:col-span-2 flex flex-col gap-2"
-              >
-                <h3 class="font-semibold text-lg">
-                  Dark Cannondale Hornet Beast V22
-                </h3>
-                <p class="text-stone-600 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Corrupti distinctio reprehenderit modi totam incidunt
-                  necessitatibus qui alias repellat fugit quasi.
-                </p>
-              </div>
-              <div class="price md:row-span-1 flex flex-col gap-1">
-                <span class="font-semibold text-sm">Price</span>
-                <h3 class="font-bold text-3xl">12,000.00</h3>
-              </div>
-              <div class="row md:row-span-1 flex gap-4">
-                <div class="quantity">
-                  <!-- <span class="font-semibold text-sm">Qty</span> -->
-                  <input
-                    type="number"
-                    placeholder="1"
-                    class="w-16 h-12 border border-stone-300 text-center text-brand-900 font-semibold"
-                  />
-                </div>
-
-                <button
-                  class="w-16 h-12 border border-stone-300 text-stone-500 hover:bg-red-600 hover:border-red-600 hover:text-white font-semibold"
-                >
-                  <i class="fa-regular fa-trash-can"></i>
-                </button>
-              </div>
+              <img
+                class="object-cover h-full w-full"
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
+                alt=""
+              />
             </div>
             <div
-              class="cart-item border p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 lg:items-center gap-4 md:gap-6 lg:gap-8"
+              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
             >
-              <div
-                class="image col-span-1 h-48 md:h-full md:row-span-3 lg:row-span-1 p-2 border"
+              <img
+                class="object-cover h-full w-full"
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
+                alt=""
+              />
+            </div>
+            <div
+              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
+            >
+              <img
+                class="object-cover h-full w-full"
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
+                alt=""
+              />
+            </div>
+            <div
+              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
+            >
+              <img
+                class="object-cover h-full w-full"
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
+                alt=""
+              />
+            </div>
+            <div
+              class="sub-img border hover:border-brand-900 cursor-pointer transition-all p-1 md:p-2 lg:p-4"
+            >
+              <img
+                class="object-cover h-full w-full"
+                src="https://media.trekbikes.com/image/upload/w_800,h_600,c_pad,f_auto,fl_progressive:semi,q_auto/MadoneSLR9_23_37419_B_Primary"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-info flex flex-col items-start gap-5">
+          <span class="py-2 px-3 border text-stone-600">Downhill Bikes</span>
+          <h2 class="text-4xl font-bold lg:w-7/12">
+            Feul EX 9.9 XX ASX T-Type Gen 6 Bike
+          </h2>
+          <div class="pricing grid grid-cols-2 items-center gap-4">
+            <div class="left">
+              <p class="text-3xl font-bold">NRs. 12,000</p>
+              <span class="text-sm text-stone-600"
+                >Price may vary according to your usage</span
               >
-                <img
-                  src="https://kreta.ciclimattio.com/admin/components/specifiche/Ciclimattio/images/Generale/COLNAGO-V4Rs%20TEAM%20MAN%202023-fondobianco-laterale.webp"
-                  alt="Product Image"
-                  class="w-full h-full object-cover"
-                />
-              </div>
-              <div
-                class="details md:row-span-1 col-span-1 lg:col-span-2 flex flex-col gap-2"
+            </div>
+            <div
+              class="right px-3 py-2 bg-red-100 flex items-center justify-center gap-2 h-fit"
+            >
+              <p class="font-semibold text-lg line-through">14999</p>
+              <p class="text-sm">10% Discount</p>
+            </div>
+          </div>
+
+          <p class="w-fit lg:w-8/12 text-stone-500">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita
+            magni amet ex eveniet, voluptas sapiente earum repellendus non est
+            nesciunt facere dolores optio explicabo beatae asperiores debitis
+            fugiat, veniam eos. Lorem ipsum dolor sit amet consectetur
+            adipisicing.
+          </p>
+
+          <div class="info-col lg:w-10/12 flex flex-col gap-2">
+            <span class="text-sm font-semibold">Sizes</span>
+            <div class="info-row flex gap-3 flex-wrap">
+              <button
+                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
               >
-                <h3 class="font-semibold text-lg">
-                  Dark Cannondale Hornet Beast V22
-                </h3>
-                <p class="text-stone-600 text-sm">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Corrupti distinctio reprehenderit modi totam incidunt
-                  necessitatibus qui alias repellat fugit quasi.
-                </p>
-              </div>
-              <div class="price md:row-span-1 flex flex-col gap-1">
-                <span class="font-semibold text-sm">Price</span>
-                <h3 class="font-bold text-3xl">12,000.00</h3>
-              </div>
-              <div class="row md:row-span-1 flex gap-4">
-                <div class="quantity">
-                  <!-- <span class="font-semibold text-sm">Qty</span> -->
-                  <input
-                    type="number"
-                    placeholder="1"
-                    class="w-16 h-12 border border-stone-300 text-center text-brand-900 font-semibold"
-                  />
-                </div>
+                MD (29” Wheel)
+              </button>
+              <button
+                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+              >
+                MD (29” Wheel)
+              </button>
+              <button
+                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+              >
+                MD (29” Wheel)
+              </button>
+              <button
+                class="px-5 py-3 border text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+              >
+                MD (29” Wheel)
+              </button>
+            </div>
+          </div>
+
+          <div class="info-col lg:w-7/12 flex gap-6">
+            <div class="info-col flex flex-col gap-2">
+              <label for="quantity" class="font-semibold text-sm"
+                >Quantity
+              </label>
+              <input
+                class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                type="number"
+                name="quantity"
+                id="quantity"
+                placeholder="1"
+              />
+            </div>
+            <div class="info-col flex flex-col gap-2">
+              <span class="text-sm font-semibold">Color Options</span>
+              <div class="info-row flex gap-3 flex-wrap">
+                <button
+                  class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 border-brand-900 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+                >
+                  <span class="h-full w-full rounded-full bg-stone-200"></span>
+                </button>
+                <button
+                  class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
+                >
+                  <span class="h-full w-full rounded-full bg-red-400"></span>
+                </button>
 
                 <button
-                  class="w-16 h-12 border border-stone-300 text-stone-500 hover:bg-red-600 hover:border-red-600 hover:text-white font-semibold"
+                  class="h-8 w-8 p-1 flex items-center justify-center rounded-full border-2 text-stone-500 hover:border-brand-900 hover:text-brand-900 transition-all"
                 >
-                  <i class="fa-regular fa-trash-can"></i>
+                  <span class="h-full w-full rounded-full bg-yellow-400"></span>
                 </button>
               </div>
             </div>
           </div>
 
-          <div class="right lg:col-span-1">
-            <div class="summary bg-brand-900 p-6 h-full flex flex-col gap-6">
-              <p class="text-stone-300 font-semibold text-xl">Order Summary</p>
-              <div class="item flex flex-col gap-2">
-                <span class="text-stone-200 text-sm">Product Name</span>
-                <p class="text-white font-semibold">08 February, 2023</p>
-              </div>
-              <div class="item flex flex-col gap-2">
-                <span class="text-stone-200 text-sm">Quantity </span>
-                <p class="text-white font-semibold">1 Pcs</p>
-              </div>
-              <div class="item flex flex-col gap-2">
-                <span class="text-stone-200 text-sm">Discount </span>
-                <p class="text-white font-semibold">15%</p>
-              </div>
+          <div class="info-col flex gap-4 mt-2">
+            <a
+              href="#"
+              class="font-semibold w-full whitespace-nowrap flex items-center justify-center bg-brand-900 text-white px-6 py-4 hover:bg-brand-600 transition-colors"
+              >Proceed to Reservation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
 
-              <div class="line h-px bg-stone-500"></div>
-              <div class="item flex flex-col gap-2">
-                <span class="text-stone-200 text-sm">Total Price</span>
-                <p class="text-white font-bold text-2xl">12,000.00</p>
-              </div>
-              <button
-                type="submit"
-                class="p-3 bg-stone-100 hover:bg-white font-semibold"
-              >
-                Proceed to Checkout
-              </button>
+    <section class="res-summary">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <h3 class="font-bold text-3xl text-brand-400">
+          <span class="text-stone-800">Reservation </span> & Specifications
+        </h3>
+
+        <div class="tab-panel flex flex-col border">
+          <div class="tab-filters flex">
+            <button
+              class="px-4 md:px-6 py-3 hover:transition-all font-semibold active-tab"
+              id="tab-i"
+            >
+              Reservation
+            </button>
+            <button
+              class="px-4 md:px-6 py-3 border hover:transition-all text-stone-500 hover:text-brand-900 bg-stone-100 font-semibold"
+              id="tab-ii"
+            >
+              Specifications
+            </button>
+            <button
+              class="px-4 md:px-6 py-3 border hover:transition-all text-stone-500 hover:text-brand-900 bg-stone-100 font-semibold"
+              id="tab-iii"
+            >
+              Inclusions
+            </button>
+          </div>
+
+          <div class="panels">
+            <div class="form-summary p-4 md:p-6" id="tab-content-i">
+              <form class="grid grid-cols-4 gap-6">
+                <div
+                  class="left col-span-4 lg:col-span-3 grid grid-cols-2 gap-6"
+                >
+                  <div class="input col-span-2 flex flex-col gap-2">
+                    <label for="name" class="font-semibold text-sm"
+                      >Reservator's Name</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="text"
+                      name="name"
+                      id="name"
+                      placeholder="Full Name"
+                    />
+                  </div>
+
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="number" class="font-semibold text-sm"
+                      >Contact Number</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="number"
+                      name="number"
+                      id="number"
+                      placeholder="+977"
+                    />
+                  </div>
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="email" class="font-semibold text-sm"
+                      >Email Address</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="email"
+                      name="email"
+                      id="email"
+                      placeholder="someone@gmail.com"
+                    />
+                  </div>
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="rent-start-date" class="font-semibold text-sm"
+                      >Start Date</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="date"
+                      name="rent-start-date"
+                      id="rent-start-date"
+                    />
+                  </div>
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="rent-end-date" class="font-semibold text-sm"
+                      >End Date</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="date"
+                      name="rent-end-date"
+                      id="rent-end-date"
+                    />
+                  </div>
+
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="bike" class="font-semibold text-sm"
+                      >Selected Bike</label
+                    >
+                    <select
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      name="bike"
+                      id="bike"
+                    >
+                      <option value="bike">Red Hornet Cannondale</option>
+                      <option value="bike">Red Hornet Cannondale</option>
+                      <option value="bike">Red Hornet Cannondale</option>
+                      <option value="bike">Red Hornet Cannondale</option>
+                    </select>
+                  </div>
+
+                  <!-- <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="start-date" class="font-semibold text-sm"
+                      >Starting day of your trip</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="date"
+                      name="start-date"
+                      id="start-date"
+                      placeholder="mm/dd/yyyy"
+                    />
+                  </div>
+
+                  <div
+                    class="input col-span-2 md:col-span-1 flex flex-col gap-2"
+                  >
+                    <label for="end-date" class="font-semibold text-sm"
+                      >Ending day of your trip</label
+                    >
+                    <input
+                      class="p-4 bg-stone-100 w-full font-semibold placeholder:text-stone-500"
+                      type="date"
+                      name="end-date"
+                      id="end-date"
+                      placeholder="mm/dd/yyyy"
+                    />
+                  </div> -->
+
+                  <div
+                    class="row col-span-2 p-4 bg-green-100 flex justify-center items-center"
+                  >
+                    <p class="text-center">
+                      Not sure what to buy? call us at
+                      <a class="font-semibold" href="">+977 9812345678</a> and
+                      get help.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="right col-span-4 lg:col-span-1">
+                  <div
+                    class="summary bg-brand-900 p-6 h-full flex flex-col gap-6"
+                  >
+                    <p class="text-stone-300 font-semibold text-xl">
+                      Reservation Summary
+                    </p>
+                    <div class="item flex flex-col gap-2">
+                      <span class="text-stone-200 text-sm">Product Name</span>
+                      <p class="text-white font-semibold">08 February, 2023</p>
+                    </div>
+                    <div class="item flex flex-col gap-2">
+                      <span class="text-stone-200 text-sm">Quantity </span>
+                      <p class="text-white font-semibold">1 Pcs</p>
+                    </div>
+                    <div class="item flex flex-col gap-2">
+                      <span class="text-stone-200 text-sm">Discount </span>
+                      <p class="text-white font-semibold">15%</p>
+                    </div>
+
+                    <div class="line h-px bg-stone-500"></div>
+                    <div class="item flex flex-col gap-2">
+                      <span class="text-stone-200 text-sm">Total Price</span>
+                      <p class="text-white font-bold text-2xl">12,000.00</p>
+                    </div>
+                    <button
+                      type="submit"
+                      class="p-3 bg-stone-100 hover:bg-white font-semibold"
+                    >
+                      Proceed to Checkout
+                    </button>
+                  </div>
+                </div>
+              </form>
             </div>
+
+            <div class="specs p-4 md:p-6 bg-white hidden" id="tab-content-ii">
+              2nd tab
+            </div>
+
+            <div class="specs p-4 md:p-6 hidden" id="tab-content-iii">
+              3rd tab
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container mx-auto py-16 px-4 flex flex-col gap-8">
+        <div class="section-header flex justify-center items-center">
+          <h3 class="font-bold text-2xl text-stone-500">
+            <span class="text-stone-800">Contact </span> Us
+          </h3>
+        </div>
+
+        <div
+          class="contact-grid grid grid-cols-1 lg:grid-cols-3 gap-12 lg:gap-8"
+        >
+          <form class="flex flex-col gap-6">
+            <input
+              class="p-4 bg-stone-100 w-full placeholder:text-stone-500"
+              type="text"
+              name=""
+              id=""
+              placeholder="Full Name"
+            />
+            <input
+              class="p-4 bg-stone-100 w-full placeholder:text-stone-500"
+              type="email"
+              name=""
+              id=""
+              placeholder="Email Address"
+            />
+            <select
+              class="p-4 bg-stone-100 text-stone-500 disabled:text-stone-500 placeholder:text-stone-500"
+              name="subject"
+              id=""
+            >
+              <option class="" value="subject">Subject</option>
+              <option value="subject">General Inquiry</option>
+              <option value="subject">Booking Inquiry</option>
+              <option value="subject">Complaint</option>
+              <option value="subject">Feedback</option>
+            </select>
+            <textarea
+              class="p-4 bg-stone-100 w-full h-40 placeholder:text-stone-500"
+              name=""
+              id=""
+              placeholder="Message"
+            ></textarea>
+
+            <a
+              href="#"
+              class="font-semibold flex items-center justify-center bg-brand-900 text-white px-6 py-3 hover:bg-brand-600 transition-colors"
+              >Submit</a
+            >
+          </form>
+
+          <div class="contact-info flex flex-col border-r border-stone-300">
+            <div class="flex-col flex flex-col gap-5">
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Visit Us At</p>
+                <p>Pokhara, Lakeside</p>
+                <p>Street No. XX</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Give Us a Call</p>
+                <p>+977 9812345678</p>
+                <p>+977 9812345678</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-2">
+                <p class="font-bold">Email</p>
+                <p>contact@gmail.com</p>
+                <p>support@nmb.com</p>
+              </div>
+              <div class="line h-px w-full bg-stone-300"></div>
+              <div class="info-col flex flex-col gap-3">
+                <p class="font-bold">Socail Links</p>
+                <div class="links flex gap-4">
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-square-facebook"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-instagram"></i>
+                  </a>
+
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-2xl fa-youtube"></i>
+                  </a>
+                  <a
+                    href=""
+                    class="icon flex items-center justify-center bg-brand-900 hover:bg-brand-600 transition-colors h-10 w-10 text-white"
+                  >
+                    <i class="fa-brands text-xl fa-x-twitter"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="map h-full">
+            <iframe
+              width="100%"
+              height="100%"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+              ><a href="https://www.gps.ie/">gps tracker sport</a></iframe
+            >
           </div>
         </div>
       </div>
@@ -1079,6 +1463,11 @@
                 >Shop</a
               >
               <a
+                href="./rentals.html"
+                class="text-stone-300 hover:text-brand-200 hover:underline"
+                >Rentals</a
+              >
+              <a
                 href="./activities.html"
                 class="text-stone-300 hover:text-brand-200 hover:underline"
                 >Activities</a
@@ -1154,6 +1543,7 @@
                 class="text-stone-300 hover:text-brand-200 hover:underline"
                 >Shop</a
               >
+
               <a
                 href="./blogs.html"
                 class="text-stone-300 hover:text-brand-200 hover:underline"
@@ -1194,5 +1584,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="./scripts/ham.js"></script>
+    <script src="./scripts/tab.js"></script>
   </body>
 </html>
